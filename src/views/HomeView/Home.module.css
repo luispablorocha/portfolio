@@ -1,0 +1,28 @@
+.container{
+    margin: 20px;
+    flex-direction: row;
+}
+.textHello{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nombre{
+    font-family: 'Motomami', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: 200;
+}
+.subdescription{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+}

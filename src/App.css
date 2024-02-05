@@ -1,0 +1,10 @@
+body {
+  margin: 0px;
+  padding: 0;
+  background-color: #1f1f1f; /* Establece el fondo negro */
+  color: white; /* Cambia el color del texto si es necesario */
+}
+
+.app-container {
+  /* Añade estilos adicionales para el contenedor principal si es necesario */
+}

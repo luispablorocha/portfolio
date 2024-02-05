@@ -1,0 +1,29 @@
+.containerImage{
+    width: 50px; /* Puedes ajustar el tamaño según tus necesidades */
+    height: 50px;
+    border-radius: 10%; 
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rebeccapurple;   
+}
+.hoverContent {
+    display: none;
+    position: absolute;
+    top: -20px; /* Ajusta la posición vertical según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.containerImage:hover .hoverContent {
+    display: block;
+}
+.imageicon{
+    width: 45%; 
+    height: auto;   
+}
