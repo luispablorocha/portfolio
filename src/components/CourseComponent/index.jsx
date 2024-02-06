@@ -1,11 +1,38 @@
 // CourseComponent.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { IonIcon } from '@ionic/react';
 import { time, calendar } from 'ionicons/icons';
 import styles from './Course.module.css'; // Asegúrate de importar los estilos correspondientes
 import PropTypes from 'prop-types';
+import WebFont from 'webfontloader';
+import ModalImagen from '../ModalComponet';
 
 const CourseComponent = ({ title, hours, date }) => {
+  const [modalAbierto, setModalAbierto] = useState(false);
+  const [imagenUrl, setImagenUrl] = useState('');
+  useEffect(() => {
+    WebFont.load({
+      custom: {
+        families: ['Motomami'],
+        urls: [
+          '/fonts/motomami.ttf',
+        ],
+      },
+      google: {
+        families: ['Poppins:800, 100']
+      }
+    });
+  }, []);
+
+  const abrirModal = (url) => {
+    setImagenUrl(url);
+    setModalAbierto(true);
+  };
+
+  const cerrarModal = () => {
+    setModalAbierto(false);
+  };
+
   return (
     <div className={`mb-4`}>
       <div className={styles.subdescription}>
@@ -18,7 +45,12 @@ const CourseComponent = ({ title, hours, date }) => {
         {date}
       </div>
       <div className={styles.subdescription}>
-        See Certificate
+        <a
+          className={styles.linkModal}
+          onClick={() => abrirModal('../../src/assets/images/certificates/certificado.jpg')}>
+          See Certificate
+        </a>
+        <ModalImagen isOpen={modalAbierto} onClose={cerrarModal} imageUrl={imagenUrl} />
       </div>
     </div>
   );

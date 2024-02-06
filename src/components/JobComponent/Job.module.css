@@ -1,0 +1,31 @@
+.textTitle{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 15px;
+}
+.dividerline{
+    height: 20px;
+    width: 3px;
+    background-color: #42f584;
+    position: relative;
+    top:45px;
+    right: 9px
+}
+.containerJobIcon{
+    width: 40px;
+    height: 40px;
+    background-color: #42f584;
+    border-radius: 100%;
+}
+.iconJob{
+    padding-left: 12px;
+    padding-top: 12px;
+    color: #000;
+}
+.textJob{
+    font-family: 'Poppins';
+    padding-left: 10px;
+}
+.textPosition{
+    font-size: 12px;
+}

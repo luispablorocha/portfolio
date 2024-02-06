@@ -6,6 +6,7 @@ import {
 import Home from "../views/HomeView";
 import Expertise from "../views/ExpertiseView";
 import Portfolio from "../views/PortfolioView";
+import Project from "../views/ProjectView";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
         path:'/portfolio',
         element: <Portfolio/>
+    },
+    {
+        path:'/portfolio/:id',
+        element: <Project/>
     }
 
 ]);

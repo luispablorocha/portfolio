@@ -42,7 +42,10 @@ const Home = () => {
 
                         </div>
                         <div className={styles.subdescription}>
-                            Computer Engineer
+                         A background in programming, web, software engineering, 
+                         operating systems, and other areas of technology; 
+                         with a bachelor's degree focused on projects, 
+                         I worked in many teams using agile work and development methodologies;
                         </div>
                     </div>
                     <div>

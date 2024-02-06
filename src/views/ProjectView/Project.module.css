@@ -1,0 +1,59 @@
+.titlePage {
+    font-family: 'Poppins', sans-serif;
+    color: #42f584;
+}
+.titleDeco{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    bottom:75px;
+    font-size: 70px;
+    z-index: -1;
+    opacity: 0.1;
+}
+.separation {
+    background-color: #42f584;
+    margin-top: 4px;
+    height: 6px;
+}
+.mainContainer{
+    position: relative;
+    bottom: 30px;
+}
+.containerAbout{
+    position: relative;
+    bottom: 90px;
+}
+.textAbout {
+    font-family: 'Motomami', sans-serif;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.blurImage {
+    position: relative;
+    overflow: hidden;
+}
+
+.blurImage img {
+    width: 100%;
+    height: 200px;
+    filter: blur(1px);
+}
+.imageLogo{
+    width: 60px;
+    height: 60px;
+}
+.texTec{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+.divStack{
+    background-color: #42f584;
+    width: 30px;
+    height: 100px;
+}

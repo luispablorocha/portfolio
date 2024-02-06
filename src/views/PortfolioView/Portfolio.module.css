@@ -5,3 +5,8 @@
 .titlePage{
     font-family: 'Poppins', sans-serif;
 }
+.separation{
+    background-color:#42f584;
+    margin-top: 4px;
+    height: 6px;
+}

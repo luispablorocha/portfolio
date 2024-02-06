@@ -1,19 +1,28 @@
-.containerProject{
-  
+.containerProject {
+    background-color: #2a343f;
+    border-radius: 10px;
+
 }
-.tec{
-   
+
+.tec {
+    background-color: #BBC7CE;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10px;
 }
-.textTec{
-  
+
+
+.imageTec {
+    width: 20px;
 }
-.imageTec{
-    
+
+.titleProject {
+    font-family: 'Poppins';
+ 
 }
-.titleProject{
-   
-}
-.descriptionProject{
-   
-  
+
+.descriptionProject {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 100;
 }
