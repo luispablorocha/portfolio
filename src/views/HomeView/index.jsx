@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
+import "./home.scss"
 import styles from './Home.module.css';
 import WebFont from 'webfontloader';
 import { Link } from 'react-router-dom';
 import Header from '../../components/HeaderComponent';
+import Intro from '../../components/Home/IntroComponent';
+import Services from '../../components/Home/ServiceComponent';
 
 
 const Home = () => {
@@ -22,44 +25,16 @@ const Home = () => {
 
     return (
         <>
-            <Header></Header>
-            <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${styles.container} `} >
-                <div className="p-5">
-                    <div className={styles.textHello}>
-                        Hello I'm
-                    </div>
-                    <div className={styles.nombre}>
-                        PABLO
-                    </div>
-                    <div className={styles.textHello}>
-                        a Software Developer
-                    </div>
-                </div>
-                <div className="p-3">
-                    <div className={`mb-8`}>
-                        <div className={styles.subtitle}>
-                            ABOUT ME
+            <div>
+                <section>
+                    <Header></Header>
+                    <Intro></Intro>
+                </section>
 
-                        </div>
-                        <div className={styles.subdescription}>
-                         A background in programming, web, software engineering, 
-                         operating systems, and other areas of technology; 
-                         with a bachelor's degree focused on projects, 
-                         I worked in many teams using agile work and development methodologies;
-                        </div>
-                    </div>
-                    <div>
-                        <div className={styles.subtitle}>
-                            EXPERTISE
-                        </div>
-                    </div>
-                    <div>
-                        <div className={styles.subtitle}>
-                            MY SOCIAL MEDIA
-                        </div>
-                    </div>
+                <section>
+                    <Services/>
 
-                </div>
+                </section>
             </div>
         </>
 

@@ -1,0 +1,91 @@
+@import "../../../app.scss";
+
+.hero{
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+
+        .textContainer{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:40px;
+            font-family:'Poppins';
+
+            @include mobile{
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+            }
+
+            h2{
+                font-size: 30px;
+                color: #6F0092;
+                letter-spacing: 10px;
+            }
+
+            h1{
+                font-size: 70px;
+                font-weight: 500;
+                @include mobile{
+                   font-size: 30px;
+                }
+            }
+
+            .buttons{
+                button{
+                    padding: 15px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color:white;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .imageContainer{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include mobile{
+            height: 50%;
+            width: 100%;
+            top: unset;
+            bottom: 0;
+        }
+
+        img{
+            width: 100%;
+            height: 110%;
+        }
+
+    }
+
+   
+
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 30vh;
+        bottom: -70px;
+        font-family:'Poppins';
+        white-space: nowrap;
+        color: #ffffff11;
+        width: 50%;
+        
+    }
+}
