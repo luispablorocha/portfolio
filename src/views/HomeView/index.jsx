@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/HeaderComponent';
 import Intro from '../../components/Home/IntroComponent';
 import Services from '../../components/Home/ServiceComponent';
+import Parallax from '../../components/Home/ParallaxComponent';
 
 
 const Home = () => {
@@ -33,7 +34,10 @@ const Home = () => {
 
                 <section>
                     <Services/>
+                </section>
 
+                <section>
+                    <Parallax/>
                 </section>
             </div>
         </>
