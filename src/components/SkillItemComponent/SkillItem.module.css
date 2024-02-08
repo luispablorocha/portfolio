@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #2A174F, #6F0092);
+    background: linear-gradient(to bottom, #c271da, #aa5fc1);
 }
 
 .imageicon{
@@ -15,6 +15,6 @@
 }
 .textNameTec{
     font-family: 'Poppins';
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 5px;
 }

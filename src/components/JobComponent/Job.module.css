@@ -6,7 +6,7 @@
 .dividerline{
     height: 20px;
     width: 3px;
-    background-color: #42f584;
+    background-color: #75ffe8;
     position: relative;
     top:45px;
     right: 9px
@@ -14,7 +14,7 @@
 .containerJobIcon{
     width: 40px;
     height: 40px;
-    background-color: #42f584;
+    background-color: #75ffe8;
     border-radius: 100%;
 }
 .iconJob{

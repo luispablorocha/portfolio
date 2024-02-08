@@ -125,6 +125,14 @@
             flex-direction: column;
             justify-content: space-between;
 
+            h2{
+                font-size: 25px;
+                font-family: 'Poppins';
+                text-align: center;
+                font-weight: 500;
+                padding-bottom: 10px;
+            }
+
             button{
                 margin-top: 20px;
                 padding: 10px;

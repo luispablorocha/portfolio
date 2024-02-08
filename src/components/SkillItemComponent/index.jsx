@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './SkillItem.module.css';
 import PropTypes from 'prop-types';
+import {motion} from 'framer-motion'
 
 
 const SkillItem = ({ title, images }) => {
@@ -9,9 +10,17 @@ const SkillItem = ({ title, images }) => {
         <div className='grid grid-cols-5'>
             {images.map((image, index) => (
                 <div>
-                    <div key={index} className={styles.containerImage}>
+                    <motion.div 
+                     initial={{ scale: 0 }}
+                     animate={{ rotate: 360, scale: 1 }}
+                     transition={{
+                       type: "spring",
+                       stiffness: 260,
+                       damping: 40
+                     }}
+                    key={index} className={styles.containerImage}>
                         <img src={image.src} alt={image.alt} className={styles.imageicon} />
-                    </div>
+                    </motion.div>
                     <div className={styles.textNameTec}>{image.alt}</div>
                </div>
             ))}

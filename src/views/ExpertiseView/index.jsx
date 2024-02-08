@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+import './expertise.scss';
 import styles from './Expertise.module.css';
 import WebFont from 'webfontloader';
 import { IonIcon } from '@ionic/react';
+import {motion} from 'framer-motion';
 import {
     phonePortraitOutline, desktopOutline,
     serverOutline, colorFilterOutline,
@@ -12,7 +14,38 @@ import Header from '../../components/HeaderComponent';
 import SkillItem from '../../components/SkillItemComponent';
 import JobComponent from '../../components/JobComponent';
 import CourseComponent from '../../components/CourseComponent';
+import Parallax from '../../components/Home/ParallaxComponent';
 
+
+const textVariants = {
+    initial: {
+        x: -500,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1
+        }
+    }
+}
+
+const textVariantsR = {
+    initial: {
+        x: 500,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1
+        }
+    }
+}
 
 const Expertise = () => {
     const images = [
@@ -62,7 +95,7 @@ const Expertise = () => {
     return (
         <>
             <Header></Header>
-            <div className='ml-5 mr-5'>
+            <div className={`${styles.Col1Color} `}>
                 <div className="flex items-center justify-center mb-2">
                     <div className={`text-4xl font-bold ${styles.titlePage}`}>RESUME
                         <div className={` ${styles.separation} `}></div>
@@ -76,10 +109,10 @@ const Expertise = () => {
                         DOWNLOAD PDF
                     </a>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
-
+                <motion.div className="mr-5 ml-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4" variants={textVariants}>
                     {/* PRIMERA COLUMNA */}
-                    <div className="pl-4">
+                    <motion.div className={`pl-4`} variants={textVariants}
+                    initial="initial" animate="animate">
                         <div className={styles.subtitleContent}>
                             SKILLS SET
 
@@ -119,7 +152,7 @@ const Expertise = () => {
                             </div>
                             <SkillItem images={imagesVersion} />
                         </div>
-                    </div>
+                    </motion.div>
                     {/* SEGUNDA COLUMNA */}
                     <div className="pl-4 ">
                         <div className={`mb-8`}>
@@ -176,7 +209,8 @@ const Expertise = () => {
                         </div>
                     </div>
                     {/* TERCERA COLUMNA */}
-                    <div className="pl-4 ">
+                    <motion.div className="pl-4 " variants={textVariantsR}
+                    initial="initial" animate="animate">
                         <div className={`${styles.subtitleContent}`}>
                             EDUCATION
                         </div>
@@ -306,8 +340,15 @@ const Expertise = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </motion.div>
+                </motion.div>
+            </div>
+            <div className='parallax2'>
+                <div className="mountains2">
+                   
                 </div>
+                <div className="planets2"></div> 
+                <div className="stars2"></div>
             </div>
 
         </>

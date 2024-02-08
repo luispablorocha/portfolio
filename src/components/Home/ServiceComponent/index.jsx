@@ -37,36 +37,37 @@ const Services = () => {
                 <div className="title">
                     <img src="../../src/assets/images/deco/people.webp"></img>
                     <h1>
-                        <b>Unique</b> Ideas
+                        <b>Creative</b> Ideas
                     </h1>
 
                 </div>
                 <div className="title">
                     <h1>
-                        <b>For Your</b> Bussiness
+                        <b>Creative</b> Code
                     </h1>
-                    <button className="button">What I do?</button>
+                    <button 
+                    className="button">What I do?</button>
                 </div>
                 
                 
             </motion.div>
             <motion.div className="listContainer" variants={variants}>
                 <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                    <h2>Branding</h2>
+                    <h2>Web Developer</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <button>GO</button>
                 </motion.div>
                 <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                    <h2>Branding</h2>
+                    <h2>App Developer</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <button>GO</button>
                 </motion.div>
                 <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                    <h2>Branding</h2>
+                    <h2>Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>

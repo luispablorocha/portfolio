@@ -38,7 +38,7 @@ const Project = () => {
                         </div>
                         <div className={styles.containerAbout}>
                             <div className={`text-3xl font-bold mt-3 ${styles.textAbout}`}>
-                                ABOUT
+                                About
                             </div>
                             <div className={`mt-4 ${styles.description}`}>
                                 {description}
@@ -49,8 +49,8 @@ const Project = () => {
                     {/* Segunda columna */}
                     <div className="flex-1 sm:ml-2">
                         <div className={styles.containerTec}>
-                            <div className={`text-3xl font-bold mt-9 ${styles.textAbout}`}>
-                                TECHNOLOGIES
+                            <div className={`text-3xl mt-9 ${styles.textAbout}`}>
+                               Used <span className="font-bold">Technologies</span>
                             </div>
                             <div className="grid grid-cols-4 gap-4 mt-5">
                                 {logos.map((logo, index) => (
@@ -73,7 +73,7 @@ const Project = () => {
                 <div className={`pr-5 pb-10 flex flex-col sm:flex-row gap-4 ${styles.mainContainer}`}>
                     <div className={`flex-1 mb-2 sm:mr-2`}>
                         <div className="flex items-center justify-center mb-8">
-                            <div className={`text-4xl font-bold ${styles.textAbout}`}>IMAGES
+                            <div className={`text-4xl font-bold ${styles.textAbout}`}>Images
 
                             </div>
                            

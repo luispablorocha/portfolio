@@ -15,6 +15,7 @@ const Parallax =()=>{
     return(
         <div className="parallax">
             <motion.h1 style={{y:yText}}>Technologies</motion.h1>
+            
             <motion.div className="mountains">
 
             </motion.div>

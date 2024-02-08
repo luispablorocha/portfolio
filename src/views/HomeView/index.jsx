@@ -7,6 +7,7 @@ import Header from '../../components/HeaderComponent';
 import Intro from '../../components/Home/IntroComponent';
 import Services from '../../components/Home/ServiceComponent';
 import Parallax from '../../components/Home/ParallaxComponent';
+import Technologies from '../../components/Home/TechnologiesComponent';
 
 
 const Home = () => {
@@ -27,8 +28,9 @@ const Home = () => {
     return (
         <>
             <div>
+            <Header></Header>
+            
                 <section>
-                    <Header></Header>
                     <Intro></Intro>
                 </section>
 
@@ -38,6 +40,10 @@ const Home = () => {
 
                 <section>
                     <Parallax/>
+                </section>
+
+                <section>
+                    <Technologies></Technologies>
                 </section>
             </div>
         </>

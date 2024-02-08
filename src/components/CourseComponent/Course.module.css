@@ -8,12 +8,12 @@
 .iconCourse{
     font-size: 12px;
     padding-right: 5px;
-    color: #42f584;
+    color: #75ffe8;
 }
 .linkModal{
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 .linkModal:hover{
-    color: #42f584;
+    color: #75ffe8;
 }

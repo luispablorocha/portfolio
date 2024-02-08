@@ -20,6 +20,7 @@
             gap:40px;
             font-family:'Poppins';
 
+
             @include mobile{
                 height: 50%;
                 width: 100%;
@@ -28,9 +29,10 @@
             }
 
             h2{
-                font-size: 30px;
+                font-size: 40px;
                 color: #6F0092;
                 letter-spacing: 10px;
+                font-weight: 700;
             }
 
             h1{

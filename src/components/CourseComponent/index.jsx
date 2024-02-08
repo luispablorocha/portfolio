@@ -6,6 +6,7 @@ import styles from './Course.module.css'; // Asegúrate de importar los estilos 
 import PropTypes from 'prop-types';
 import WebFont from 'webfontloader';
 import ModalImagen from '../ModalComponet';
+import {motion} from 'framer-motion'
 
 const CourseComponent = ({ title, hours, date }) => {
   const [modalAbierto, setModalAbierto] = useState(false);
@@ -34,7 +35,10 @@ const CourseComponent = ({ title, hours, date }) => {
   };
 
   return (
-    <div className={`mb-4`}>
+    <motion.div className={`mb-4`} 
+    whileHover={{ scale: 1.2 }}
+    whileTap={{ scale: 0.9 }}
+    transition={{ type: "spring", stiffness: 400, damping: 17 }}>
       <div className={styles.subdescription}>
         {title}
       </div>
@@ -52,7 +56,7 @@ const CourseComponent = ({ title, hours, date }) => {
         </a>
         <ModalImagen isOpen={modalAbierto} onClose={cerrarModal} imageUrl={imagenUrl} />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
