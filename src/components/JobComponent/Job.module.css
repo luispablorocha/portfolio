@@ -1,7 +1,7 @@
 .textTitle{
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
 }
 .dividerline{
     height: 20px;
@@ -27,5 +27,5 @@
     padding-left: 10px;
 }
 .textPosition{
-    font-size: 12px;
+    font-size: 15px;
 }

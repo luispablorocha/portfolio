@@ -7,9 +7,13 @@
     position: relative;
 
     .wrapper{
-        max-width: 1366px;
+        max-width: 1300px;
         height: 100%;
         margin: auto;
+
+        @include mobile{
+           
+        }
 
         .textContainer{
             width: 50%;
@@ -33,6 +37,10 @@
                 color: #6F0092;
                 letter-spacing: 10px;
                 font-weight: 700;
+
+                @include mobile{
+                    text-align: center;
+                }
             }
 
             h1{
@@ -53,6 +61,17 @@
                     margin-right: 20px;
                     cursor: pointer;
                 }
+            }
+
+            .logo{
+                font-size: 50px;
+                padding-right: 30px;
+            }
+            .logoIN:hover{
+                color: #0077b5
+            }
+            .logoGit:hover{
+                color: #8b49ba;
             }
 
         }

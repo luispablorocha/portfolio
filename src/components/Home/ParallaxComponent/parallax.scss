@@ -8,14 +8,19 @@
     bottom: 60px;
     display: flex;
     overflow: hidden;
-
     justify-content: center;
+
+    @include mobile{
+        height: 40vh;
+    }
 
     h1 {
         font-size: 90px;
         font-family: 'Poppins';
         @include mobile{
             font-size: 32px;
+            position: relative;
+            top: 100px;
         }
     }
 

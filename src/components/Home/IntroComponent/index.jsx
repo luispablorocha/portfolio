@@ -1,5 +1,9 @@
 import "./intro.scss"
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { IonIcon } from '@ionic/react';
+import {
+    logoLinkedin, logoGithub
+} from 'ionicons/icons';
 
 const textVariants = {
     initial: {
@@ -25,6 +29,14 @@ const Intro = () => {
                     initial="initial" animate="animate">
                     <motion.h2 variants={textVariants}>PABLO ROCHA </motion.h2>
                     <motion.h1 variants={textVariants}>Web Developer</motion.h1>
+                    <div className='flex'>
+                        <a href="https://www.linkedin.com/tu-perfil-de-LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <IonIcon icon={logoLinkedin} className="logo logoIN" />
+                        </a>
+                        <a href="https://github.com/LuisPabloRocha" target="_blank" rel="noopener noreferrer">
+                            <IonIcon icon={logoGithub} className="logo logoGit" />
+                        </a>
+                    </div>
                     <motion.div variants={textVariants} className="buttons">
                         <motion.button variants={textVariants}>See Latest Work</motion.button>
                         <motion.button variants={textVariants}>Contact Me</motion.button>

@@ -7,6 +7,7 @@ import Home from "../views/HomeView";
 import Expertise from "../views/ExpertiseView";
 import Portfolio from "../views/PortfolioView";
 import Project from "../views/ProjectView";
+import About from "../views/AboutView";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     {
         path:'/portfolio/:id',
         element: <Project/>
+    },
+    {
+        path:'/about',
+        element: <About/>
     }
 
 ]);

@@ -35,6 +35,9 @@ const Header = () => {
               <Link to="/" className={styles.link}>HOME</Link>
             </li>
             <li className="mr-4">
+              <Link to="/about" className={styles.link}>ABOUT</Link>
+            </li>
+            <li className="mr-4">
               <Link to="/resume" className={styles.link}>RESUME</Link>
             </li>
             <li className="mr-4">
@@ -56,6 +59,7 @@ const Header = () => {
             {isMenuOpen && (
               <div className="mt-2">
                 <Link to="/" className={`${styles.link} block px-2 py-1 text-white`}>HOME</Link>
+                <Link to="/about" className={`${styles.link} block px-2 py-1 text-white`}>ABOUT</Link>
                 <Link to="/resume" className={`${styles.link} block px-2 py-1 text-white`}>RESUME</Link>
                 <Link to="/portfolio" className={`${styles.link} block px-2 py-1 text-white`}>PORTFOLIO</Link>
                 <a href="#" className={`${styles.link} block px-2 py-1 text-white`}>CONTACT</a>

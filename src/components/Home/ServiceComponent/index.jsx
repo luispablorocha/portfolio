@@ -42,7 +42,7 @@ const Services = () => {
 
                 </div>
                 <div className="title">
-                    <h1>
+                    <h1 style={{justifyContent:"space-around"}}>
                         <b>Creative</b> Code
                     </h1>
                     <button 
@@ -51,26 +51,27 @@ const Services = () => {
                 
                 
             </motion.div>
-            <motion.div className="listContainer" variants={variants}>
+            <motion.div className="listContainer mt-4" variants={variants}>
                 <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
                     <h2>Web Developer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <p>Crafting sleek and interactive websites with HTML, CSS, and JavaScript.
+                    </p>
+                    <p>Building responsive web solutions for a seamless user experience.
                     </p>
                     <button>GO</button>
                 </motion.div>
                 <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
                     <h2>App Developer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <p>Transforming ideas into engaging mobile solutions with a focus on user experience.
                     </p>
+                    <p>Creating intuitive mobile experiences for iOS and Android platforms.</p>
                     <button>GO</button>
                 </motion.div>
                 <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
                     <h2>Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <p>Eye for detail drive my work in shaping visual experiences.
                     </p>
+                    <p>Exploring the intersection of design and functionality</p>
                     <button>GO</button>
                 </motion.div>
             </motion.div>
