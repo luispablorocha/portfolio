@@ -1,57 +1,76 @@
-.containerAbout{
-    .hello{
+.containerAbout {
+    .hello {
         font-size: 80px;
         color: white;
         line-height: 80px;
         font-family: 'Poppins';
     }
-    .computer-text{
+
+    .computer-text {
         font-size: 30px;
         color: #75ffe8;
         line-height: 80px;
         font-family: 'Poppins';
     }
-    .text-aboutme{
+
+    .text-aboutme {
         padding-top: 20px;
         font-family: 'Poppins';
         text-align: justify;
         color: rgb(157, 156, 156);
     }
-    .logo{
+
+    .logo {
         font-size: 50px;
         padding-right: 30px;
     }
-    .logoIN:hover{
+
+    .logoIN:hover {
         color: #0077b5
     }
-    .logoGit:hover{
+
+    .logoGit:hover {
         color: #8b49ba;
     }
 }
 
-.container-design{
-    .question{
+.container-design {
+    .text-code {
+        font-family: 'Poppins';
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .question {
         font-family: 'Poppins';
         font-size: 30px;
     }
-    .text-design{
+
+    .text-design {
         padding-top: 20px;
         font-family: 'Poppins';
         text-align: justify;
         color: rgb(157, 156, 156);
+
+        a {
+            color: #75ffe8;
+            cursor: pointer;
+        }
     }
 
-    .container-images{
+    .container-images {
         padding-top: 20px;
         width: 100%;
-        img{
+
+        img {
             width: 300px
         }
-        p{
+
+        p {
             font-family: 'Poppins';
             font-size: 13px;
             color: rgb(180, 177, 177);
         }
     }
-    
+
 }

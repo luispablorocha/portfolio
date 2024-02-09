@@ -38,6 +38,7 @@ const Portfolio = () => {
                 <Card
                     key={index}
                     id={project.id}
+                    type={project.type}
                     title={project.title}
                     description={project.description}
                     technologies={project.tecnologies}

@@ -17,6 +17,7 @@
     h1 {
         font-size: 90px;
         font-family: 'Poppins';
+        
         @include mobile{
             font-size: 32px;
             position: relative;

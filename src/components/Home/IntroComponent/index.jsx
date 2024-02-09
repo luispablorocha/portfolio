@@ -1,4 +1,5 @@
-import "./intro.scss"
+import "./intro.scss";
+import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { IonIcon } from '@ionic/react';
 import {
@@ -31,23 +32,23 @@ const Intro = () => {
                     <motion.h1 variants={textVariants}>Web Developer</motion.h1>
                     <div className='flex'>
                         <a href="https://www.linkedin.com/tu-perfil-de-LinkedIn" target="_blank" rel="noopener noreferrer">
-                            <IonIcon icon={logoLinkedin} className="logo logoIN" />
+                            <IonIcon icon={logoLinkedin} className="logo1 logoIN1" />
                         </a>
                         <a href="https://github.com/LuisPabloRocha" target="_blank" rel="noopener noreferrer">
-                            <IonIcon icon={logoGithub} className="logo logoGit" />
+                            <IonIcon icon={logoGithub} className="logo1 logoGit1" />
                         </a>
                     </div>
-                    <motion.div variants={textVariants} className="buttons">
-                        <motion.button variants={textVariants}>See Latest Work</motion.button>
+                    {/*<motion.div variants={textVariants} className="buttons">
+                        <motion.button className="button-home" variants={textVariants}><Link to="/ruta-de-tu-proyecto">See Latest Work</Link></motion.button>
                         <motion.button variants={textVariants}>Contact Me</motion.button>
-                    </motion.div>
+                    </motion.div>*/}
                 </motion.div>
             </div>
             <div className="slidingTextContainer">
                 WEB & APP DEVELOPER
             </div>
             <div className="imageContainer">
-                <img src="../../src/assets/images/deco/me.png"></img>
+                <img src="../../src/assets/images/deco/me-2.png"></img>
 
             </div>
 

@@ -105,6 +105,7 @@
 .button:hover,
 .button:focus {
     background-color: var(--clr-neutral-100);
+    color: black;
 }
 
 .cardBody {

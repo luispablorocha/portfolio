@@ -53,13 +53,36 @@ const About = () => {
                     {/* Segunda columna */}
                     <div className="flex-1 sm:ml-2">
                         <div className="container-design">
+                            <div className="font-bold  text-code mx-auto">
+                                NOT only code
+                            </div>
+                            <div className="font-bold mt-3 question mx-auto">
+                                Research
+                            </div>
+                            <div className="text-design">
+                                <strong>
+                                    Cybersecurity Analysis of Wearable Devices: Smartwatches passive attack. MDPI Sensors
+                                </strong>
+
+                                . We conducted state-of-the-art research and extracted relevant information about attacks on
+                                IoT devices. Passive attacks were performed on smartwatches to uncover vulnerabilities
+                                using penetration testing techniques. Research was conducted on sniffer
+                                devices to utilize them for capturing Bluetooth Low Energy traffic over the air.
+
+                                <p className='mt-3'>For more information: <a href="https://www.mdpi.com/1424-8220/23/12/5438" target="_blank" rel="noopener noreferrer">Read the paper here</a></p>
+                            </div>
+                            <div className='flex justify-center container-images'>
+                                <div className='mx-auto'>
+
+                                </div>
+                            </div>
                             <div className="font-bold mt-3 question">
-                                ¿Designer?
+                                ¿Design?
                             </div>
                             <div className="text-design">
                                 "While I may not consider myself a designer,
                                 my creative approach and eye for detail drive my work in
-                                shaping memorable visual experiences. From brainstorming concepts to refining layouts,
+                                shaping visual experiences. From brainstorming concepts to refining layouts,
                                 I enjoy exploring the intersection of design and functionality. By leveraging my knowledge
                                 and passion for <strong>creativity</strong>,
                                 I strive to deliver visually compelling solutions that resonate with audiences."
@@ -70,7 +93,6 @@ const About = () => {
                                     <p>*Logo I created for an app. Made with Illustrator*</p>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
