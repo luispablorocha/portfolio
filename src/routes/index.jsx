@@ -1,7 +1,11 @@
 import {
     createBrowserRouter,
     RouterProvider,
+    NavLink
+    
 } from "react-router-dom";
+import './routes.css'
+
 
 import Home from "../views/HomeView";
 import Expertise from "../views/ExpertiseView";
@@ -35,7 +39,16 @@ const router = createBrowserRouter([
 
 const Routes = () => {
     return (
-        <RouterProvider router={router}></RouterProvider>
+        <RouterProvider router={router}>
+        <nav>
+            <ul>
+                <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
+                <li><NavLink to="/resume" activeClassName="active">Resume</NavLink></li>
+                <li><NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink></li>
+                <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
+            </ul>
+        </nav>
+    </RouterProvider>
     );
 };
 

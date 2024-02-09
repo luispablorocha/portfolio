@@ -8,7 +8,9 @@ import WebFont from 'webfontloader';
 import ModalImagen from '../ModalComponet';
 import {motion} from 'framer-motion'
 
-const CourseComponent = ({ title, hours, date }) => {
+
+
+const CourseComponent = ({ title, hours, date, certificate }) => {
   const [modalAbierto, setModalAbierto] = useState(false);
   const [imagenUrl, setImagenUrl] = useState('');
   useEffect(() => {
@@ -20,7 +22,7 @@ const CourseComponent = ({ title, hours, date }) => {
         ],
       },
       google: {
-        families: ['Poppins:800, 100']
+        families: ['Poppins:800, 100, 500']
       }
     });
   }, []);
@@ -42,16 +44,16 @@ const CourseComponent = ({ title, hours, date }) => {
       <div className={styles.subdescription}>
         {title}
       </div>
-      <div className={styles.subdescription}>
+      <div className={styles.textSee}>
         <IonIcon icon={time} className={styles.iconCourse}></IonIcon>
         {hours}
         <IonIcon icon={calendar} className={`ml-3 ${styles.iconCourse}`}></IonIcon>
         {date}
       </div>
-      <div className={styles.subdescription}>
+      <div className={styles.textSee}>
         <a
           className={styles.linkModal}
-          onClick={() => abrirModal('../../src/assets/images/certificates/certificado.jpg')}>
+          onClick={() => abrirModal(certificate)}>
           See Certificate
         </a>
         <ModalImagen isOpen={modalAbierto} onClose={cerrarModal} imageUrl={imagenUrl} />

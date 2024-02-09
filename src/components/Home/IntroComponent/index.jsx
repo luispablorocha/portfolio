@@ -28,9 +28,8 @@ const Intro = () => {
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants}
                     initial="initial" animate="animate">
-                    <motion.h2 variants={textVariants}>PABLO ROCHA </motion.h2>
-                    <motion.h1 variants={textVariants}>Web Developer</motion.h1>
-                    <div className='flex'>
+                        <motion.h2 variants={textVariants}>PABLO ROCHA </motion.h2>
+                         <div className='flex'>
                         <a href="https://www.linkedin.com/tu-perfil-de-LinkedIn" target="_blank" rel="noopener noreferrer">
                             <IonIcon icon={logoLinkedin} className="logo1 logoIN1" />
                         </a>
@@ -38,10 +37,7 @@ const Intro = () => {
                             <IonIcon icon={logoGithub} className="logo1 logoGit1" />
                         </a>
                     </div>
-                    {/*<motion.div variants={textVariants} className="buttons">
-                        <motion.button className="button-home" variants={textVariants}><Link to="/ruta-de-tu-proyecto">See Latest Work</Link></motion.button>
-                        <motion.button variants={textVariants}>Contact Me</motion.button>
-                    </motion.div>*/}
+                    <motion.h1 variants={textVariants}>Web Developer</motion.h1>
                 </motion.div>
             </div>
             <div className="slidingTextContainer">

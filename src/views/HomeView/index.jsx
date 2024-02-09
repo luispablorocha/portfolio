@@ -8,6 +8,7 @@ import Intro from '../../components/Home/IntroComponent';
 import Services from '../../components/Home/ServiceComponent';
 import Parallax from '../../components/Home/ParallaxComponent';
 import Technologies from '../../components/Home/TechnologiesComponent';
+import Contact from '../../components/Home/ContactComponent';
 
 
 const Home = () => {
@@ -44,6 +45,10 @@ const Home = () => {
 
                 <section>
                     <Technologies></Technologies>
+                </section>
+
+                <section>
+                    <Contact></Contact>
                 </section>
             </div>
         </>

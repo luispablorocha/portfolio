@@ -17,8 +17,8 @@ const dataProjects = [
             '../../src/assets/images/code/port/port-2.jpg',
             '../../src/assets/images/code/port/port-3.jpg'],
         link: {
-            linkto: "HERE",
-            linkType: "page"
+            linkto: "https://github.com/LuisPabloRocha/portfolio",
+            linkType: "git"
         },
 
     },
@@ -27,12 +27,13 @@ const dataProjects = [
         title: 'TLATOANI',
         type: 'app',
         description: 'UI/UX design and implementation on code for a "Swipe Cards" type application, which based on a series of questions, you obtain a match with a possible result.  ',
-        tecnologies: ['React Native', 'Illustrator'],
+        tecnologies: ['React Native', 'Illustrator', 'Figma'],
         date: 'Dec 2023-Current',
         image: '../../src/assets/images/mockups/tlani.png',
         icons: ['../../src/assets/images/react.png', '../../src/assets/images/adobe-illustrator.png'],
         logos: ['../../src/assets/images/logos/react.png',
-            '../../src/assets/images/logos/illustrator.png'],
+            '../../src/assets/images/logos/illustrator.png',
+            '../../src/assets/images/logos/figma-2.png'],
         mockups: ['../../src/assets/images/code/tlani/tlani-1.jpeg',
             '../../src/assets/images/code/tlani/tlani-2.jpeg',
             '../../src/assets/images/code/tlani/tlani-3.jpeg'],
@@ -45,13 +46,16 @@ const dataProjects = [
         id: 2,
         title: 'QUINI',
         type: 'app',
-        description: 'Design and creation of brand identity, logo and screens, based on basic UI/UX design patterns, using tools such as Figma and Illustrator.',
-        tecnologies: ['Figma', 'React Native'],
+        description: 'Developed a soccer betting app to keep track of your sports bets with your friends using React Native Framework. '+
+        'Design and creation of brand identity, logo and screens, based on basic UI/UX design patterns, using tools such as Figma and Illustrator. '+ 
+        'API data consumption using Axios. ',
+        tecnologies: ['Figma', 'React Native', 'Axios'],
         date: 'August 2023-Current',
         image: '../../src/assets/images/mockups/quini.png',
         icons: ['../../src/assets/images/react.png', '../../src/assets/images/figma.png'],
         logos: ['../../src/assets/images/logos/figma-2.png',
             '../../src/assets/images/logos/react.png',
+            '../../src/assets/images/logos/axios.png',
         ],
         mockups: ['../../src/assets/images/code/quini/quini-2.jpeg',
             '../../src/assets/images/code/quini/quini-3.png',
@@ -63,10 +67,34 @@ const dataProjects = [
 
     },
     {
+        id: 5,
+        title: 'EVENT TICKET',
+        type: 'web',
+        description: 'Development of a website for events and concerts in Mexico consuming data from Tickemasters API FOR DEVELOPERS. Use of hooks, states, styles, routing, fetch and localstorage to storage user info and liked events.',
+        tecnologies: ['React', 'Axios'],
+        date: 'Sep-Dec 2023',
+        image: '../../src/assets/images/mockups/tickets.png',
+        icons: ['../../src/assets/images/react.png', '../../src/assets/images/axios.png'],
+        logos: ['../../src/assets/images/logos/react.png',
+            '../../src/assets/images/logos/axios.png',
+            ],
+        mockups: ['../../src/assets/images/code/ticket/ticket-1.jpg',
+        '../../src/assets/images/code/ticket/ticket-2.jpg',
+        '../../src/assets/images/code/ticket/ticket-3.jpg',
+        ],
+        link: {
+            linkto: "",
+            linkType: "page"
+        },
+
+    },
+    {
         id: 3,
         title: 'PRED-ACAD',
         type: 'web',
-        description: 'Developed and programmed a web system (data interpretation) that predicts the probability that a student will pass a subject using data mining techniques. ',
+        description: 'Interface design following basic UX/UI principles with Figma, Ilustrator and Photoshop. '+
+        'Recollection and pre-processing data (student academic records) using data sheets [Excel]. '+
+        'Developed and programmed a web system (data interpretation) that predicts the probability that a student will pass a subject using data mining techniques. (Web APIs and JSON) ',
         tecnologies: ['Angular', 'HTML & CSS', 'JavaScript', 'Bootstrap'],
         date: 'Feb-Jun 2021',
         image: '../../src/assets/images/mockups/predacad.png',
@@ -78,8 +106,8 @@ const dataProjects = [
         mockups: ['../../src/assets/images/code/pred/pre-1.jpeg',
         ],
         link: {
-            linkto: "",
-            linkType: "page"
+            linkto: "https://github.com/LuisPabloRocha/PrediccionAcademica",
+            linkType: "git"
         },
 
     },

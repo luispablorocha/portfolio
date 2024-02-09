@@ -14,8 +14,9 @@ import Header from '../../components/HeaderComponent';
 import SkillItem from '../../components/SkillItemComponent';
 import JobComponent from '../../components/JobComponent';
 import CourseComponent from '../../components/CourseComponent';
-import Parallax from '../../components/Home/ParallaxComponent';
 
+import certificateR from '../../assets/images/certificates/cerf-r.jpeg';
+import certificateRN from '../../assets/images/certificates/cerf-rn.jpeg';
 
 const textVariants = {
     initial: {
@@ -160,7 +161,7 @@ const Expertise = () => {
                                 EXPERIENCE
                             </div>
                             <JobComponent
-                                title="ADMINISTRATION AND COSTUMER SERVICE"
+                                title="ADMINISTRATION AND COSTUMER SERV."
                                 position="Ferreteria Sta. Rita"
                                 duties="CFDI 4.0 | Office 365 | Inventory "
                                 icon={construct}
@@ -190,21 +191,25 @@ const Expertise = () => {
                                 title="React Professional Course"
                                 hours="10-Hours"
                                 date="October 2023 | Online"
+                                certificate={certificateR}
                             />
                             <CourseComponent
                                 title="React Native Course"
                                 hours="4-Hours"
                                 date="October 2023 | Online"
-                            />
-                            <CourseComponent
-                                title="React Native Course"
-                                hours="4-Hours"
-                                date="October 2023 | Online"
+                                certificate={certificateRN}
                             />
                             <CourseComponent
                                 title="CCNA Routing and Switching: Introduction to Networks CISCO Networking Academy"
                                 hours="60-Hours"
                                 date="2023 | Facultad de Ingeniería"
+                                certificate=""
+                            />
+                            <CourseComponent
+                                title="Master in JS Frameworks: Learn Angular and React"
+                                hours="10-Hours"
+                                date="2020 | Online Udemy"
+                                certificate=""
                             />
                         </div>
                     </div>

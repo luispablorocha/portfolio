@@ -2,7 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './Project.module.css';
 import Header from '../../components/HeaderComponent';
-import dataProjects from '../../data/projects'; // Ajusta la ruta según tu estructura de archivos
+import dataProjects from '../../data/projects';
+import { motion } from 'framer-motion';
 import { IonIcon } from '@ionic/react';
 import {
     calendar, linkOutline
@@ -48,17 +49,20 @@ const Project = () => {
                             <div className={`mt-4 ${styles.textdate}`}>
                                 <IonIcon icon={calendar} className={styles.iconDate}></IonIcon>Work date: {date}
                             </div>
-                            <div className={`mt-2 ${styles.textdate}`}>
-                                <IonIcon icon={linkOutline} className={styles.iconDate}></IonIcon>
-                                <a href={link.linkto} target="_blank" rel="noopener noreferrer">
-                                    Link
-                                </a>
-                            </div>
+
+                            {link.linkto !== '' && (
+                                <div className={`mt-2 ${styles.textdate}`}>
+                                    <IonIcon icon={linkOutline} className={styles.iconDate}></IonIcon>
+                                    <a href={link.linkto} target="_blank" rel="noopener noreferrer">
+                                        Link
+                                    </a>
+                                </div>
+                            )}
                         </div>
                     </div>
 
                     {/* Segunda columna */}
-                    <div className="flex-1 sm:ml-2">
+                    <div className="flex-1 sm:ml-2 mb-5">
                         <div className={styles.containerTec}>
                             <div className={`text-3xl ${styles.textAbout}`}>
                                 Technologies <span className="font-bold">Used</span>
@@ -66,7 +70,6 @@ const Project = () => {
                             <div className="grid grid-cols-4 gap-4 mt-5">
                                 {logos.map((logo, index) => (
                                     <div key={index} className="col-span-1 flex flex-col items-center justify-center">
-
                                         <img
                                             className={`${styles.imageLogo}`}
                                             src={logo}
@@ -91,15 +94,18 @@ const Project = () => {
 
 
                 </div>
-                <div className="flex flex-wrap justify-center">
+                <div className="flex flex-wrap justify-center mb-5">
                     {mockups.map((img, index) => (
-                        <div key={index} className={` ${styles.imageContainer}`} >
+                        <motion.div key={index} className={` ${styles.imageContainer}`}
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }} >
                             <img
                                 className={`${project.type === 'web' ? styles.imageWeb : styles.imageApp}`}
                                 src={img}
                                 alt={`Image ${index + 1}`}
                             />
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div >

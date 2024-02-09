@@ -43,26 +43,23 @@ const Header = () => {
             <li className="mr-4">
               <Link to="/portfolio" className={styles.link}>PORTFOLIO</Link>
             </li>
-            <li className="mr-4">
-              <a href="#" className={styles.link}>CONTACT</a>
-            </li>
+            
           </ul>
 
           {/* Menú desplegable para pantallas pequeñas */}
           <div className="lg:hidden absolute right-5 bg-white-800">
             <button
               onClick={toggleMenu}
-              className={`${styles.link} block px-2 py-1 text-white`}
+              className={`${styles.linkMenu} block px-2 py-1 text-white`}
             >
               Menu
             </button>
             {isMenuOpen && (
-              <div className="mt-2">
+              <div className={`mt-2 ${styles.menuOpen}`}>
                 <Link to="/" className={`${styles.link} block px-2 py-1 text-white`}>HOME</Link>
                 <Link to="/about" className={`${styles.link} block px-2 py-1 text-white`}>ABOUT</Link>
                 <Link to="/resume" className={`${styles.link} block px-2 py-1 text-white`}>RESUME</Link>
                 <Link to="/portfolio" className={`${styles.link} block px-2 py-1 text-white`}>PORTFOLIO</Link>
-                <a href="#" className={`${styles.link} block px-2 py-1 text-white`}>CONTACT</a>
               </div>
             )}
           </div>

@@ -24,10 +24,21 @@
     text-decoration: none;
     color: white;
   }
-  .link{
+  .linkMenu{
     font-family: 'Poppins';
     transition: color 0.3s ease;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
   }
-  .link:hover{
+  .linkMenu:hover{
     color:#75ffe8;
+
+  }
+  .menuOpen{
+    position: absolute;
+    top: 10px; /* Adjust this value to position the menu properly */
+    right: 0; /* Adjust this value if you want the menu to appear aligned to the right */
+    background-color: #1f1f1f;
+    z-index: 9999; 
   }

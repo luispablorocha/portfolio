@@ -20,11 +20,12 @@
             align-self: center;
             text-align: center;
             flex-direction: column;
+            margin-right: 10px;
         }
 
         p{
             font-weight: 200;
-            font-size: 18px;
+            font-size: 15px;
             color: gray;
             text-align: right;
             font-family: 'Poppins';
@@ -101,6 +102,9 @@
                     height: 50px;
                 }
             }
+            button:hover{
+                background-color: rgb(173, 173, 173);
+            }
         }
         
         
@@ -143,8 +147,9 @@
                 padding-bottom: 10px;
             }
 
-            button{
+            .button-check{
                 margin-top: 20px;
+                width: 100%;
                 padding: 10px;
                 background-color: #a393e3;
                 border: none;
@@ -153,6 +158,9 @@
                 color: #1f1f1f;
                 font-family: 'Poppins';
                 font-weight: 200;
+            }
+            .button-check:hover{
+                background-color: #8d8d8d;
             }
         }
 

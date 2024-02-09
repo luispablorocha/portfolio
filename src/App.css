@@ -8,3 +8,9 @@ body {
 .app-container {
   /* Añade estilos adicionales para el contenedor principal si es necesario */
 }
+
+.active {
+  color: red;
+  font-weight: bold;
+  /* Agrega más estilos según sea necesario */
+}

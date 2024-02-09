@@ -62,14 +62,19 @@
         padding-top: 20px;
         width: 100%;
 
-        img {
+        .image {
             width: 300px
+        }
+
+        .image2 {
+            width: 150px
         }
 
         p {
             font-family: 'Poppins';
             font-size: 13px;
             color: rgb(180, 177, 177);
+            text-align: center;
         }
     }
 
