@@ -6,8 +6,25 @@ import { IonIcon } from '@ionic/react';
 import {
     logoLinkedin, logoGithub
 } from 'ionicons/icons';
+import {motion,} from 'framer-motion';
 
+const variants = {
+    initial: {
+        x: -500,
+        y: 100,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1
+        }
 
+    }
+}
 
 
 const About = () => {
@@ -20,46 +37,47 @@ const About = () => {
                         <div className={` ${styles.separation} `}></div>
                     </div>
                 </div>
-                <div className={`pr-5 flex flex-col sm:flex-row gap-4`}>
-                    {/* Primera columna */}
-                    <div className={`flex-1 mb-2 sm:mr-2`}>
-                        <div className={"containerAbout"}>
-                            <div className="font-bold mt-3 hello">
+                <motion.div className={`pr-5 flex flex-col sm:flex-row gap-4`} variants={variants}
+            initial="initial" animate="animate">
+                    
+                    <motion.div className={`flex-1 mb-2 sm:mr-2`} variants={variants}>
+                        <motion.div className={"containerAbout"} variants={variants}>
+                            <motion.div className="font-bold mt-3 hello" variants={variants}>
                                 Hello, I'm Luis Pablo Rocha
-                            </div>
-                            <div className="font-bold mt-3 computer-text">
+                            </motion.div>
+                            <motion.div className="font-bold mt-3 computer-text" variants={variants}>
                                 Computer Engineer
-                            </div>
-                            <div className='flex'>
+                            </motion.div>
+                            <motion.div className='flex' variants={variants}>
                                 <a href="https://www.linkedin.com/tu-perfil-de-LinkedIn" target="_blank" rel="noopener noreferrer">
                                     <IonIcon icon={logoLinkedin} className="logo logoIN" />
                                 </a>
                                 <a href="https://github.com/LuisPabloRocha" target="_blank" rel="noopener noreferrer">
                                     <IonIcon icon={logoGithub} className="logo logoGit" />
                                 </a>
-                            </div>
-                            <div className="text-aboutme">
+                            </motion.div>
+                            <motion.div className="text-aboutme">
                                 A background in programming, web, software engineering,
                                 operating systems, and other areas of technology;
                                 with a bachelor's degree focused on projects,
                                 I worked in many teams using agile work and development
                                 methodologies; building skills such as responsibility,
                                 effective communication, problem solving and organization.
-                            </div>
+                            </motion.div>
 
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     {/* Segunda columna */}
-                    <div className="flex-1 sm:ml-2">
-                        <div className="container-design">
-                            <div className="font-bold  text-code mx-auto">
+                    <motion.div className="flex-1 sm:ml-2" variants={variants}>
+                        <motion.div className="container-design" variants={variants}>
+                            <motion.div className="font-bold  text-code mx-auto" variants={variants}>
                                 NOT only code
-                            </div>
-                            <div className="font-bold mt-3 question mx-auto">
+                            </motion.div>
+                            <motion.div className="font-bold mt-3 question mx-auto">
                                 Research
-                            </div>
-                            <div className="text-design">
+                            </motion.div>
+                            <motion.div className="text-design" variants={variants}>
                                 <strong>
                                     Cybersecurity Analysis of Wearable Devices: Smartwatches passive attack. MDPI Sensors
                                 </strong>
@@ -70,24 +88,24 @@ const About = () => {
                                 devices to utilize them for capturing Bluetooth Low Energy traffic over the air.
 
                                 <p className='mt-3'>For more information: <a href="https://www.mdpi.com/1424-8220/23/12/5438" target="_blank" rel="noopener noreferrer">Read the paper here</a></p>
-                            </div>
-                            <div className='flex justify-center container-images'>
+                            </motion.div>
+                            <motion.div className='flex justify-center container-images'>
                                 <div className='mx-auto'>
 
                                 </div>
-                            </div>
+                            </motion.div>
                             <div className="font-bold mt-3 question">
                                 ¿Design?
                             </div>
-                            <div className="text-design">
+                            <motion.div className="text-design" variants={variants}>
                                 "While I may not consider myself a designer,
                                 my creative approach and eye for detail drive my work in
                                 shaping visual experiences. From brainstorming concepts to refining layouts,
                                 I enjoy exploring the intersection of design and functionality. By leveraging my knowledge
                                 and passion for <strong>creativity</strong>,
                                 I strive to deliver visually compelling solutions that resonate with audiences."
-                            </div>
-                            <div className='flex justify-center container-images'>
+                            </motion.div>
+                            <motion.div className='flex justify-center container-images' variants={variants}>
                                 <div className='mx-auto'>
                                     <img className="image" src='../../src/assets/images/about/tlatoani-logo.png' alt="Logo I created for an app. Made with Illustrator"></img>
                                     <p>*Logo I created for an app. Made with Illustrator*</p>
@@ -96,11 +114,11 @@ const About = () => {
                                     <img className="image2" src='../../src/assets/images/about/tlani-png.png' alt="Logo I created for an app. Made with Illustrator"></img>
                                     <p className='mt-2'>*Made with Illustrator*</p>
                                 </div>
-                            </div>
+                            </motion.div>
 
-                        </div>
-                    </div>
-                </div>
+                        </motion.div>
+                    </motion.div>
+                </motion.div>
                 <div className={`pr-5 pb-10 flex flex-col sm:flex-row gap-4 ${styles.mainContainer}`}>
                     <div className={`flex-1 mb-2 sm:mr-2`}>
                         <div className="flex items-center justify-center mb-8">

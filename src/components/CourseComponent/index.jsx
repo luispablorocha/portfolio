@@ -6,8 +6,7 @@ import styles from './Course.module.css'; // Asegúrate de importar los estilos 
 import PropTypes from 'prop-types';
 import WebFont from 'webfontloader';
 import ModalImagen from '../ModalComponet';
-import {motion} from 'framer-motion'
-
+import { motion } from 'framer-motion'
 
 
 const CourseComponent = ({ title, hours, date, certificate }) => {
@@ -37,10 +36,10 @@ const CourseComponent = ({ title, hours, date, certificate }) => {
   };
 
   return (
-    <motion.div className={`mb-4`} 
-    whileHover={{ scale: 1.2 }}
-    whileTap={{ scale: 0.9 }}
-    transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+    <motion.div className={`mb-4`}
+      whileHover={{ scale: 1.2 }}
+      whileTap={{ scale: 0.9 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}>
       <div className={styles.subdescription}>
         {title}
       </div>
@@ -50,14 +49,16 @@ const CourseComponent = ({ title, hours, date, certificate }) => {
         <IonIcon icon={calendar} className={`ml-3 ${styles.iconCourse}`}></IonIcon>
         {date}
       </div>
-      <div className={styles.textSee}>
-        <a
-          className={styles.linkModal}
-          onClick={() => abrirModal(certificate)}>
-          See Certificate
-        </a>
-        <ModalImagen isOpen={modalAbierto} onClose={cerrarModal} imageUrl={imagenUrl} />
-      </div>
+      {certificate && ( 
+        <div className={styles.textSee}>
+          <a
+            className={styles.linkModal}
+            onClick={() => abrirModal(certificate)}>
+            See Certificate
+          </a>
+          <ModalImagen isOpen={modalAbierto} onClose={cerrarModal} imageUrl={imagenUrl} />
+        </div>
+      )}
     </motion.div>
   );
 }

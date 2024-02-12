@@ -202,7 +202,7 @@ const Expertise = () => {
                             <CourseComponent
                                 title="CCNA Routing and Switching: Introduction to Networks CISCO Networking Academy"
                                 hours="60-Hours"
-                                date="2023 | Facultad de Ingeniería"
+                                date="2020 | Facultad de Ingeniería"
                                 certificate=""
                             />
                             <CourseComponent
