@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './expertise.scss';
 import styles from './Expertise.module.css';
 import WebFont from 'webfontloader';
@@ -180,7 +181,7 @@ const Expertise = () => {
                                 icon={codeSlash}
                             />
                             <div className={styles.textCheck} >
-                                * For more info, check my portfolio HERE
+                                * For more, check my portfolio <Link to="/portfolio" >HERE</Link>
                             </div>
                         </div>
 

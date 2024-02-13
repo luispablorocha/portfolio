@@ -81,7 +81,7 @@ const dataProjects = [
         id: 5,
         title: 'EVENT TICKET',
         type: 'web',
-        description: 'Development of a website for events and concerts in Mexico consuming data from Tickemasters API FOR DEVELOPERS. Use of hooks, states, styles, routing, fetch and localstorage to storage user info and liked events.',
+        description: 'Creation of a website dedicated to showcasing events and concerts in Mexico, leveraging data from the Tickemasters API FOR DEVELOPERS. Implementation of modern web development techniques such as hooks, states, styles, routing, fetch, and local storage for efficient management of user information and saved favorite events.',
         tecnologies: ['React', 'Axios'],
         date: 'Sep-Dec 2023',
         image: '../../src/assets/images/mockups/tickets.png',
@@ -94,8 +94,8 @@ const dataProjects = [
             '../../src/assets/images/code/ticket/ticket-3.jpg',
         ],
         link: {
-            linkto: "",
-            linkType: "page"
+            linkto: "https://github.com/LuisPabloRocha/tickets-masters",
+            linkType: "git"
         },
 
     },
@@ -158,7 +158,7 @@ const dataProjects = [
         tecnologies: ['Java','Netbeans', 'PostgreSQL'],
         date: 'Jan-Jun 2021',
         image: '../../src/assets/images/mockups/paq.png',
-        icons: ['../../src/assets/images/java-w2.png',,
+        icons: ['../../src/assets/images/java-w2.png','../../src/assets/images/postgresql.png',
             ],
         logos: ['../../src/assets/images/languajes/java.png',
             '../../src/assets/images/logos/netbeans.png',
@@ -169,7 +169,7 @@ const dataProjects = [
             '../../src/assets/images/code/paq/paq2.png',
             '../../src/assets/images/code/paq/paq3.png'],
         link: {
-            linkto: "https://github.com/LuisPabloRocha/Postgres-NetBeans-Paqueteria",
+            linkto: "https://github.com/CARDONALUIS/PaqueteriaSLP-Postgres",
             linkType: "git"
         },
 

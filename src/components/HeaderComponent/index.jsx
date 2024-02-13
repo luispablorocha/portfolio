@@ -26,8 +26,8 @@ const Header = () => {
 
   return (
     <header className="text-white pl-10 pr-10 pt-4 pb-4 relative">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">LR</h1>
+      <div className={`mx-auto flex justify-between items-center ${styles.navContainer}`}>
+        <img src='../src/assets/images/LOGO-PR.png' className={styles.logoImage}></img>
         <nav className="lg:flex lg:items-center relative">
           {/* Menú normal para pantallas grandes */}
           <ul className="hidden lg:flex">
