@@ -30,14 +30,14 @@ const Intro = () => {
                     initial="initial" animate="animate">
                         <motion.h2 variants={textVariants}>PABLO ROCHA </motion.h2>
                          <div className='flex'>
-                        <a href="https://www.linkedin.com/tu-perfil-de-LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/luis-pablo-rocha-1bb935214/" target="_blank" rel="noopener noreferrer">
                             <IonIcon icon={logoLinkedin} className="logo1 logoIN1" />
                         </a>
                         <a href="https://github.com/LuisPabloRocha" target="_blank" rel="noopener noreferrer">
                             <IonIcon icon={logoGithub} className="logo1 logoGit1" />
                         </a>
                     </div>
-                    <motion.h1 variants={textVariants}>Web Developer</motion.h1>
+                    <motion.h1 variants={textVariants}>Computer Engineer</motion.h1>
                 </motion.div>
             </div>
             <div className="slidingTextContainer">

@@ -19,8 +19,11 @@ const sliderVariants = {
 const Technologies = () => {
     return (
         <>
+            <div className="text-frec">
+                I frequently utilize the following technologies:
+            </div>
             <div className="tec ml-8 mr-8 mb-8">
-                <motion.div className="mx-auto ml-8 mr-8 flex flex-wrap justify-center gap-4 container-tecs" 
+                <motion.div className="mx-auto ml-8 mr-8 flex flex-wrap justify-center gap-4 container-tecs"
                 >
                     {dataLanguajes.map((data, index) => (
                         <motion.div
@@ -35,6 +38,9 @@ const Technologies = () => {
                         </motion.div>
                     ))}
                 </motion.div>
+            </div>
+            <div className="other-tecs flex-wrap justify-center">
+                OTHER TECS: Python, MongoDB, Windows and Linux.
             </div>
 
         </>

@@ -17,6 +17,7 @@ import CourseComponent from '../../components/CourseComponent';
 
 import certificateR from '../../assets/images/certificates/cerf-r.jpeg';
 import certificateRN from '../../assets/images/certificates/cerf-rn.jpeg';
+import certificateNet from '../../assets/images/certificates/networks-cerf.jpg';
 
 const textVariants = {
     initial: {
@@ -190,7 +191,7 @@ const Expertise = () => {
                             <CourseComponent
                                 title="React Professional Course"
                                 hours="10-Hours"
-                                date="October 2023 | Online"
+                                date="December 2023 | Online"
                                 certificate={certificateR}
                             />
                             <CourseComponent
@@ -203,7 +204,7 @@ const Expertise = () => {
                                 title="CCNA Routing and Switching: Introduction to Networks CISCO Networking Academy"
                                 hours="60-Hours"
                                 date="2020 | Facultad de Ingeniería"
-                                certificate=""
+                                certificate={certificateNet}
                             />
                             <CourseComponent
                                 title="Master in JS Frameworks: Learn Angular and React"

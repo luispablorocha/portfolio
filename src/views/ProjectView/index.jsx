@@ -54,7 +54,7 @@ const Project = () => {
                                 <div className={`mt-2 ${styles.textdate}`}>
                                     <IonIcon icon={linkOutline} className={styles.iconDate}></IonIcon>
                                     <a href={link.linkto} target="_blank" rel="noopener noreferrer">
-                                        Link
+                                        Link a repositorio/página
                                     </a>
                                 </div>
                             )}

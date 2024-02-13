@@ -9,6 +9,7 @@ import Services from '../../components/Home/ServiceComponent';
 import Parallax from '../../components/Home/ParallaxComponent';
 import Technologies from '../../components/Home/TechnologiesComponent';
 import Contact from '../../components/Home/ContactComponent';
+import Other from '../../components/Home/OthersComponent';
 
 
 const Home = () => {
@@ -49,6 +50,10 @@ const Home = () => {
 
                 <section>
                     <Contact></Contact>
+                </section>
+
+                <section>
+                    <Other></Other>
                 </section>
             </div>
         </>

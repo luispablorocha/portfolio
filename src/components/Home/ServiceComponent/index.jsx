@@ -68,11 +68,11 @@ const Services = () => {
                     <Link to="/portfolio/2"><button className="button-check">GO</button></Link>
                 </motion.div>
                 <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Design</h2>
-                    <p>Eye for detail drive my work in shaping visual experiences.
+                    <h2>Software Developer</h2>
+                    <p>Transforming conceptual ideas into functional and impactful software solutions, prioritizing user experience at every stage of development
                     </p>
-                    <p>Exploring the intersection of design and functionality</p>
-                    <Link to="/portfolio/1"><button className="button-check">GO</button></Link>
+
+                    <Link to="/portfolio/6"><button className="button-check">GO</button></Link>
                 </motion.div>
             </motion.div>
         </motion.div>

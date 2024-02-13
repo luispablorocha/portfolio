@@ -26,7 +26,6 @@ const Card = ({ id, title, description, tecnologies, date, image, icons }) => {
     const cardStyle = {
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
-        // Ajusta otros estilos según sea necesario
     };
 
     return (

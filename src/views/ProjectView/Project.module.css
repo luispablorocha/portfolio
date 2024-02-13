@@ -11,9 +11,11 @@
     opacity: 0.1;
 }
 .iconDate{
-    font-size: 18px;
+    font-size: 20px;
     padding-right: 10px;
     color: #75ffe8;
+    position: relative;
+    top: 5px;
 }
 .textdate{
     font-family: 'Poppins', sans-serif;

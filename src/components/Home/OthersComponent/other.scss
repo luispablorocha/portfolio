@@ -1,0 +1,79 @@
+@import "../../../app.scss";
+.text-morethan {
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding-top: 50px;
+
+    .text-color-more {
+        color: #75ffe8;
+        padding-right: 10px;
+    }
+}
+
+.container-more {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include mobile{
+           padding-left: 20px;
+           padding-right: 20px;
+    }
+
+    .title-more {
+        font-size: 40px;
+        font-family: 'Poppins';
+        font-weight: 700;
+    }
+
+    .subtitle-more {
+        font-size: 20px;
+        font-family: 'Poppins';
+        color: gray;
+    }
+
+    .description-more {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        text-align: justify;
+    }
+
+    .logoFace {
+        font-size: 30px;
+        position: relative;
+        top: 7px;
+        left: 10px;
+    }
+
+    .container-image-net {
+
+        font-family: 'Poppins';
+        font-size: 12px;
+
+        img {
+
+            margin-bottom: 10px;
+        }
+
+        a {
+            margin-top: 10px;
+            font-family: 'Poppins';
+            padding: 5px;
+            font-size: 13px;
+        }
+    }
+
+    .boton-seeRec {
+        background-color: #75ffe8;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 14px;
+        color: black;
+        border-radius: 50px;
+    }
+
+    .boton-seeRec:hover {
+        background-color: gainsboro;
+    }
+}

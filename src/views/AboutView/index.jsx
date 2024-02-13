@@ -48,8 +48,11 @@ const About = () => {
                             <motion.div className="font-bold mt-3 computer-text" variants={variants}>
                                 Computer Engineer
                             </motion.div>
+                            <motion.div variants={variants} className='mb-3'>
+                                <a href="mailto:luispablo2098@hotmail.com">luispablo2098@hotmail.com</a>
+                            </motion.div>
                             <motion.div className='flex' variants={variants}>
-                                <a href="https://www.linkedin.com/tu-perfil-de-LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/luis-pablo-rocha-1bb935214/" target="_blank" rel="noopener noreferrer">
                                     <IonIcon icon={logoLinkedin} className="logo logoIN" />
                                 </a>
                                 <a href="https://github.com/LuisPabloRocha" target="_blank" rel="noopener noreferrer">
@@ -109,6 +112,10 @@ const About = () => {
                                 <div className='mx-auto'>
                                     <img className="image" src='../../src/assets/images/about/tlatoani-logo.png' alt="Logo I created for an app. Made with Illustrator"></img>
                                     <p>*Logo I created for an app. Made with Illustrator*</p>
+                                </div>
+                                <div className='mx-auto'>
+                                    <img className="image2" src='../../src/assets/images/about/tlani-png.png' alt="Logo I created for an app. Made with Illustrator"></img>
+                                    <p className='mt-2'>*Made with Illustrator*</p>
                                 </div>
                                 <div className='mx-auto'>
                                     <img className="image2" src='../../src/assets/images/about/tlani-png.png' alt="Logo I created for an app. Made with Illustrator"></img>

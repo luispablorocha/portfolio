@@ -1,13 +1,29 @@
 import React, { useEffect } from 'react';
 import styles from './Portfolio.module.css';
 import WebFont from 'webfontloader';
-import { IonIcon } from '@ionic/react';
 import { } from 'ionicons/icons';
 import Header from '../../components/HeaderComponent';
-import ProjectComponent from '../../components/ProjectComponent';
 import Card from '../../components/CardComponent';
 import dataProjects from '../../data/projects'
+import { motion} from 'framer-motion'
 
+const variants = {
+    initial: {
+        x: 0,
+        y: 500,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1
+        }
+
+    }
+}
 
 const Portfolio = () => {
     useEffect(() => {
@@ -33,7 +49,9 @@ const Portfolio = () => {
                         <div className={` ${styles.separation} `}></div>
                     </div>
                 </div>
-                <div className="pr-5 pb-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
+                <motion.div className="pr-5 pb-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4"
+                 variants={variants}
+                 initial="initial" animate="animate">
                 {dataProjects.map((project, index) => (
                 <Card
                     key={index}
@@ -47,7 +65,7 @@ const Portfolio = () => {
                     icons={project.icons}
                 />
             ))}   
-                </div>
+                </motion.div>
             </div>
 
 
