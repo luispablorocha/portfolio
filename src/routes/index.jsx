@@ -12,6 +12,7 @@ import Expertise from "../views/ExpertiseView";
 import Portfolio from "../views/PortfolioView";
 import Project from "../views/ProjectView";
 import About from "../views/AboutView";
+import ErrorPage from "../views/ErrorView";
 
 const router = createBrowserRouter([
     {
@@ -33,7 +34,12 @@ const router = createBrowserRouter([
     {
         path:'/about',
         element: <About/>
-    }
+    },
+    {
+        // Esta ruta captura todas las rutas no definidas y muestra la página de error 404
+        path: "*",
+        element: <ErrorPage />
+      }
 
 ]);
 

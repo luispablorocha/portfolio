@@ -17,7 +17,9 @@ const Footer = () => {
                 <a href="https://github.com/LuisPabloRocha" target="_blank" rel="noopener noreferrer"className="mx-2 link">
                     <IonIcon icon={logoGithub} className="logo logoIN" />GitHub
                 </a>
+               
             </nav>
+            <a className='icon-att'  target="_blank" rel="noopener noreferrer" href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a>
         </footer>
     );
 };

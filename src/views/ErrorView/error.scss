@@ -1,0 +1,23 @@
+.ErrorPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
+    height: 70vh;
+    /* Usa el 100% del alto de la pantalla */
+    font-family: 'Poppins';
+
+    .imageError{
+        width: 400px;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
