@@ -37,7 +37,7 @@ const Intro = () => {
                             <IonIcon icon={logoGithub} className="logo1 logoGit1" />
                         </a>
                     </div>
-                    <motion.h1 variants={textVariants}>Computer Engineer</motion.h1>
+                    <motion.h1 variants={textVariants}>Software Engineer</motion.h1>
                 </motion.div>
             </div>
             <div className="slidingTextContainer">

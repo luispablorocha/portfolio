@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['assets/fonts'],
+  base:"https://luispablorocha.github.io/portfolio",
 })
