@@ -7,13 +7,7 @@
     position: relative;
 
     .wrapper{
-        
         height: 100%;
-        margin: auto;
-
-        @include mobile{
-           
-        }
 
         .textContainer{
             width: 50%;

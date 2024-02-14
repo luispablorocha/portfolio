@@ -13,7 +13,7 @@ import iconReact from '../../src/assets/images/react.png';
 import iconMotion from '../../src/assets/images/motion-icon.png';
 import iconAI from '../../src/assets/images/adobe-illustrator.png';
 import iconFigma from '../../src/assets/images/figma.png';
-import iconAxios from '../../src/assets/images/logos/axios.png';
+import iconAxios from '../../src/assets/images/axios.png';
 import iconAngular from '../../src/assets/images/angular.png';
 import iconBoots from '../../src/assets/images/bootstrap.png';
 import iconHTML from '../../src/assets/images/html.png';
@@ -141,7 +141,7 @@ const dataProjects = [
     },
     {
         id: 5,
-        title: 'EVENT TICKET',
+        title: 'EVENTS TICKET',
         type: 'web',
         description: 'Creation of a website dedicated to showcasing events and concerts in Mexico, leveraging data from the Tickemasters API FOR DEVELOPERS. Implementation of modern web development techniques such as hooks, states, styles, routing, fetch, and local storage for efficient management of user information and saved favorite events.',
         tecnologies: ['React', 'Axios'],
@@ -200,7 +200,7 @@ const dataProjects = [
     },
     {
         id: 7,
-        title: 'Delivery SLP ',
+        title: 'DELIVERY SLP ',
         type: 'web',
         description: 'Together with a colleague, I undertook a project using NetBeans and Java, leveraging PostgreSQL as the backend database. The software aimed to manage various branches of a parcel delivery service, encompassing functionalities such as branch management, phone records, route planning, and report generation. Our collaborative effort resulted in a robust system designed to streamline operations and enhance efficiency within the package delivery network',
         tecnologies: ['Java','Netbeans', 'PostgreSQL'],

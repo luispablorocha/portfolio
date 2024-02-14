@@ -1,5 +1,4 @@
 import "./intro.scss";
-import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { IonIcon } from '@ionic/react';
 import {

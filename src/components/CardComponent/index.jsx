@@ -1,5 +1,6 @@
 import React, { useEffect, useState, } from 'react';
 import { Link } from "react-router-dom";
+import './card.scss'
 import styles from './Card.module.css';
 import WebFont from 'webfontloader';
 import { IonIcon } from '@ionic/react';
@@ -43,7 +44,7 @@ const Card = ({ id, title, description, tecnologies, date, image, icons }) => {
                         <p className={styles.text}>{date}</p>
                     </div>
                     <div className={styles.cardContent}>
-                        <h2 className={styles.cardTitle}>{title}</h2>
+                        <h2 className={`${styles.cardTitle} cardTitle-mobile`}>{title}</h2>
                         <p className={styles.cardBody}>
                             {description}
                         </p>

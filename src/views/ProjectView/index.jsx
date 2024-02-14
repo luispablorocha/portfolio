@@ -9,6 +9,8 @@ import {
     calendar, linkOutline
 } from 'ionicons/icons';
 
+import imgCode from '../../assets/images/code/tlani-code.jpg'
+
 
 const Project = () => {
     const { id } = useParams();
@@ -37,7 +39,7 @@ const Project = () => {
                     {/* Primera columna */}
                     <div className={`flex-1 sm:mr-2`}>
                         <div className={`${styles.blurImage}`}>
-                            <img src='../../src/assets/images/code/tlani-code.jpg' alt='About Image' />
+                            <img src={imgCode} alt='About Image' />
                         </div>
                         <div className={styles.containerAbout}>
                             <div className={`text-3xl font-bold mt-3 ${styles.textAbout}`}>

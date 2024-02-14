@@ -1,0 +1,25 @@
+@import "../../app.scss";
+
+.logo-mobile {
+    @include mobile {
+        position: relative;
+        right: 70px;
+        
+    }
+}
+
+.menu-link {
+    @include mobile {
+        position: relative;
+        left: 100px;
+    }
+
+}
+
+.menu-open {
+    @include mobile {
+        position: relative;
+        left: 110px;
+        z-index: 1000;
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../app.scss";
+
+.cardTitle-mobile{
+
+    position: relative;
+    width: 100%;
+    font-family: 'Poppins';
+    padding-bottom: 40px;
+    font-size: 8vh;
+
+    @include mobile {
+        font-size: 4vh;   
+    }
+
+}

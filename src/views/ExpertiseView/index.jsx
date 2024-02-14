@@ -20,7 +20,12 @@ import certificateR from '../../assets/images/certificates/cerf-r.jpeg';
 import certificateRN from '../../assets/images/certificates/cerf-rn.jpeg';
 import certificateNet from '../../assets/images/certificates/networks-cerf.jpg';
 
-import pdfDocDV from '../../assets/documents/luispablorocha-CV.pdf'
+import pdfDocDV from '../../assets/documents/luispablorocha-CV.pdf';
+
+import imgUK from '../../assets/images/united-kingdom.png';
+import imgFR from '../../assets/images/france.png';
+import imgGE from '../../assets/images/germany.png';
+import imgSP from '../../assets/images/mexico.png';
 
 const textVariants = {
     initial: {
@@ -182,7 +187,7 @@ const Expertise = () => {
                                 EXPERIENCE
                             </div>
                             <JobComponent
-                                title="ADMINISTRATION AND COSTUMER SERV."
+                                title="ADMIN & COSTUMER SERV."
                                 position="Ferreteria Sta. Rita"
                                 duties="CFDI 4.0 | Office 365 | Inventory "
                                 icon={construct}
@@ -256,7 +261,7 @@ const Expertise = () => {
                             </div>
                             <div className={styles.containerLanguage}>
                                 <div>
-                                    <img src="../../src/assets/images/united-kingdom.png" className={styles.imageFlag}></img>
+                                    <img src={imgUK} className={styles.imageFlag}></img>
                                 </div>
                                 <div className={styles.textLanguage}>
                                     English
@@ -270,7 +275,7 @@ const Expertise = () => {
                             </div>
                             <div className={styles.containerLanguage}>
                                 <div>
-                                    <img src="../../src/assets/images/france.png" className={styles.imageFlag}></img>
+                                    <img src={imgFR} className={styles.imageFlag}></img>
                                 </div>
                                 <div className={styles.textLanguage}>
                                     France
@@ -284,7 +289,7 @@ const Expertise = () => {
                             </div>
                             <div className={styles.containerLanguage}>
                                 <div>
-                                    <img src="../../src/assets/images/germany.png" className={styles.imageFlag}></img>
+                                    <img src={imgGE} className={styles.imageFlag}></img>
                                 </div>
                                 <div className={styles.textLanguage}>
                                     German
@@ -298,7 +303,7 @@ const Expertise = () => {
                             </div>
                             <div className={styles.containerLanguage}>
                                 <div>
-                                    <img src="../../src/assets/images/mexico.png" className={styles.imageFlag}></img>
+                                    <img src={imgSP} className={styles.imageFlag}></img>
                                 </div>
                                 <div className={styles.textLanguage}>
                                     Spanish
