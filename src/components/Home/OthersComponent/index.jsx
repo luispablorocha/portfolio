@@ -47,8 +47,8 @@ const Other = () => {
 
     return (
         <>
-            <div className="text-morethan flex flex-wrap justify-center">
-                <div className="text-color-more">
+            <div className="text-morethan flex flex-wrap justify-center container">
+                <div className="text-color-more container">
                     More
                 </div>
                 than Programming...

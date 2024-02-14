@@ -34,10 +34,10 @@
 
 .cardTitle {
     position: relative;
-    width: 70%;
+    width: 100%;
     font-family: 'Poppins';
     padding-bottom: 40px;
-    font-size: 40px;
+    font-size: 6vh;
 }
 
 .card:hover .cardTitle::after,

@@ -20,6 +20,8 @@ import certificateR from '../../assets/images/certificates/cerf-r.jpeg';
 import certificateRN from '../../assets/images/certificates/cerf-rn.jpeg';
 import certificateNet from '../../assets/images/certificates/networks-cerf.jpg';
 
+import pdfDocDV from '../../assets/documents/luispablorocha-CV.pdf'
+
 const textVariants = {
     initial: {
         x: -500,
@@ -124,7 +126,7 @@ const Expertise = () => {
                 <div className="flex items-center justify-center mb-8">
                 <IonIcon icon={cloudDownloadOutline} className={styles.iconSkill}></IonIcon>
                     <a className={styles.linkPDF}
-                        href="../../src/assets/documents/luis-pablo-rocha-cv.pdf"
+                        href={pdfDocDV}
                         download="luispablorocha-cv.pdf">
                         DOWNLOAD PDF
                     </a>

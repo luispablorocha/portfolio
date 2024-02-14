@@ -27,7 +27,7 @@ const textVariants = {
 const Intro = () => {
     return (
         <div className="hero">
-            <div className="wrapper">
+            <div className="wrapper container">
                 <motion.div className="textContainer" variants={textVariants}
                     initial="initial" animate="animate">
                         <motion.h2 variants={textVariants}>PABLO ROCHA </motion.h2>
