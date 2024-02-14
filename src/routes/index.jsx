@@ -36,7 +36,6 @@ const router = createBrowserRouter([
         element: <About/>
     },
     {
-        // Esta ruta captura todas las rutas no definidas y muestra la página de error 404
         path: "*",
         element: <ErrorPage />
       }

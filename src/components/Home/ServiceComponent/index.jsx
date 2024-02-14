@@ -2,7 +2,7 @@ import "./service.scss";
 import { useRef } from "react";
 import { animate, motion, useInView } from 'framer-motion'
 import { Link } from 'react-router-dom';
-
+import imgPeople from '../../../assets/images/deco/people.webp';
 
 const variants = {
     initial: {
@@ -36,7 +36,7 @@ const Services = () => {
             </motion.div>
             <motion.div className="titleContainer" variants={variants}>
                 <div className="title">
-                    <img src="../../src/assets/images/deco/people.webp"></img>
+                    <img src={imgPeople}></img>
                     <h1>
                         <b>Creative</b> Ideas
                     </h1>
@@ -71,7 +71,6 @@ const Services = () => {
                     <h2>Software Developer</h2>
                     <p>Transforming conceptual ideas into functional and impactful software solutions, prioritizing user experience at every stage of development.
                     </p>
-
                     <Link to="/portfolio/6"><button className="button-check">GO</button></Link>
                 </motion.div>
             </motion.div>

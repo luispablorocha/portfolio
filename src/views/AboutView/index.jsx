@@ -7,6 +7,8 @@ import {
     logoLinkedin, logoGithub
 } from 'ionicons/icons';
 import {motion,} from 'framer-motion';
+import imgTlani1 from '../../assets/images/about/tlatoani-logo.png';
+import imgTlani2 from '../../assets/images/about/tlani-png.png';
 
 const variants = {
     initial: {
@@ -110,17 +112,14 @@ const About = () => {
                             </motion.div>
                             <motion.div className='flex justify-center container-images' variants={variants}>
                                 <div className='mx-auto'>
-                                    <img className="image" src='../../src/assets/images/about/tlatoani-logo.png' alt="Logo I created for an app. Made with Illustrator"></img>
+                                    <img className="image" src={imgTlani1} alt="Logo I created for an app. Made with Illustrator"></img>
                                     <p>*Logo I created for an app. Made with Illustrator*</p>
                                 </div>
                                 <div className='mx-auto'>
-                                    <img className="image2" src='../../src/assets/images/about/tlani-png.png' alt="Logo I created for an app. Made with Illustrator"></img>
+                                    <img className="image2" src={imgTlani2} alt="Logo I created for an app. Made with Illustrator"></img>
                                     <p className='mt-2'>*Made with Illustrator*</p>
                                 </div>
-                                <div className='mx-auto'>
-                                    <img className="image2" src='../../src/assets/images/about/tlani-png.png' alt="Logo I created for an app. Made with Illustrator"></img>
-                                    <p className='mt-2'>*Made with Illustrator*</p>
-                                </div>
+                                
                             </motion.div>
 
                         </motion.div>

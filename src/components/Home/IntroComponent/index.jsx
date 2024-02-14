@@ -6,6 +6,8 @@ import {
     logoLinkedin, logoGithub
 } from 'ionicons/icons';
 
+import ImageMe from '../../../../src/assets/images/deco/me-2.png'
+
 const textVariants = {
     initial: {
         x: -500,
@@ -37,15 +39,14 @@ const Intro = () => {
                             <IonIcon icon={logoGithub} className="logo1 logoGit1" />
                         </a>
                     </div>
-                    <motion.h1 variants={textVariants}>Software Engineer</motion.h1>
+                    <motion.h1 variants={textVariants}>Computer Engineer</motion.h1>
                 </motion.div>
             </div>
             <div className="slidingTextContainer">
                 WEB & APP DEVELOPER
             </div>
             <div className="imageContainer">
-                <img src="../../src/assets/images/deco/me-2.png"></img>
-
+                <img src={ImageMe}></img>
             </div>
 
         </div>

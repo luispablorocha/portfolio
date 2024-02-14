@@ -12,6 +12,9 @@ import certificateNet from '../../../assets/images/certificates/networks-cerf.jp
 import certificateSec from '../../../assets/images/certificates/security.jpeg';
 import certificateSec2 from '../../../assets/images/certificates/security-2.jpeg';
 import certificateDB from '../../../assets/images/certificates/Poster-DB.jpg';
+import imgCN from '../../../assets/images/more/networks.jpg';
+import imgDB from '../../../assets/images/more/data.jpg';
+import imgSec from '../../../assets/images/more/security.jpg';
 
 const sliderVariants = {
     initial: {
@@ -73,7 +76,7 @@ const Other = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-12 container-image-net">
-                        <img src="../../src/assets/images/more/networks.jpg" className="image-more"></img>
+                        <img src={imgCN} className="image-more"></img>
                         * Image by
                         <a className="link-image" href="https://pixabay.com/es/users/jarmoluk-143740/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2784907">
                             Michal Jarmoluk</a> on
@@ -103,7 +106,7 @@ const Other = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-12 mb-4 pr-4 container-image-net">
-                        <img src="../../src/assets/images/more/data.jpg" className="image-more"></img>
+                        <img src={imgDB} className="image-more"></img>
                         * Image by
                         <a href="https://unsplash.com/es/@casparrubin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Caspar Rubin</a> on <a href="https://unsplash.com/es/fotos/macbook-pro-con-imagenes-de-codigos-de-idioma-de-la-computadora-fPkvU7RDmCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
                             Unsplash
@@ -148,7 +151,7 @@ const Other = () => {
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-12 container-image-net">
-                        <img src="../../src/assets/images/more/security.jpg" className="image-more"></img>
+                        <img src={imgSec} className="image-more"></img>
                         * Image by
                         <a href="https://pixabay.com/es/users/thedigitalway-3008341/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1591018">
                             Kris

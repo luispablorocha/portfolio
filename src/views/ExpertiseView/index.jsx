@@ -50,34 +50,51 @@ const textVariantsR = {
     }
 }
 
+import imgHMTL from '../../assets/images/html.png';
+import imgJS from '../../assets/images/js.png';
+import imgReact from '../../assets/images/react.png';
+import imgANgular from '../../assets/images/angular.png';
+import imgFlutter from '../../assets/images/flutter.png';
+import imgAI from '../../assets/images/adobe-illustrator.png';
+import imgPS from '../../assets/images/adobe-photoshop.png';
+import imgFigma from '../../assets/images/figma.png';
+import imgMS from '../../assets/images/mysql.png';
+import imgPost from '../../assets/images/postgresql.png';
+import imgSQL from '../../assets/images/sql-server.png';
+import imgFB from '../../assets/images/firebase.png';
+import imgGIT from '../../assets/images/github.png';
+
+
+
+
 const Expertise = () => {
     const images = [
-        { src: "../../src/assets/images/html.png", alt: "HTML & CSS" },
-        { src: "../../src/assets/images/js.png", alt: "JavaScript" },
-        { src: "../../src/assets/images/react.png", alt: "React JS" },
-        { src: "../../src/assets/images/angular.png", alt: "Angular" }
+        { src: imgHMTL, alt: "HTML & CSS" },
+        { src: imgJS, alt: "JavaScript" },
+        { src: imgReact, alt: "React JS" },
+        { src: imgANgular, alt: "Angular" }
     ];
 
     const imagesApp = [
-        { src: "../../src/assets/images/react.png", alt: "React Native" },
-        { src: "../../src/assets/images/flutter.png", alt: "Flutter" },
+        { src: imgReact, alt: "React Native" },
+        { src: imgFlutter, alt: "Flutter" },
     ];
 
     const imagesDesign = [
-        { src: "../../src/assets/images/adobe-illustrator.png", alt: "Illustrator" },
-        { src: "../../src/assets/images/adobe-photoshop.png", alt: "Photoshop" },
-        { src: "../../src/assets/images/figma.png", alt: "Figma" },
+        { src: imgAI, alt: "Illustrator" },
+        { src: imgPS, alt: "Photoshop" },
+        { src: imgFigma, alt: "Figma" },
     ];
 
     const imagesDB = [
-        { src: "../../src/assets/images/mysql.png", alt: "MySQL" },
-        { src: "../../src/assets/images/postgresql.png", alt: "PostgreSQL" },
-        { src: "../../src/assets/images/sql-server.png", alt: "SQL Server" },
-        { src: "../../src/assets/images/firebase.png", alt: "Firebase" },
+        { src: imgMS, alt: "MySQL" },
+        { src: imgPost, alt: "PostgreSQL" },
+        { src: imgSQL, alt: "SQL Server" },
+        { src: imgFB, alt: "Firebase" },
     ];
 
     const imagesVersion = [
-        { src: "../../src/assets/images/github.png", alt: "Github" },
+        { src: imgGIT, alt: "Github" },
 
     ];
 
