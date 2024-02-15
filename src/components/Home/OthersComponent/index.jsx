@@ -46,7 +46,7 @@ const Other = () => {
     };
 
     return (
-        <>
+        <div className="others">
             <div className="text-morethan container">
                 <div className="text-color-more container">
                     More
@@ -168,7 +168,7 @@ const Other = () => {
                 </div>
             </div>
             <ModalImagen isOpen={modalAbierto} onClose={cerrarModal} imageUrl={imagenUrl} />
-        </>
+        </div>
     )
 }
 

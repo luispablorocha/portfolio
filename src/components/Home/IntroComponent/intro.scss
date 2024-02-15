@@ -6,6 +6,11 @@
     background: linear-gradient(180deg, #1f1f1f, #0c0c1d);
     position: relative;
 
+    @include desktop{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .wrapper{
         height: 100%;
 
