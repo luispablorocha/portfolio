@@ -158,11 +158,11 @@ const Other = () => {
                         </a> on
                         <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1591018">Pixabay</a></div>
                 </div>
-                <div className="mt-2">
+                <div className="mt-2 container-buttons">
                     <button onClick={() => abrirModal(certificateSec)} class="py-2 px-4  boton-seeRec">
                         See Recognition
                     </button>
-                    <button onClick={() => abrirModal(certificateSec2)} class="py-2 px-4 ml-4  boton-seeRec">
+                    <button onClick={() => abrirModal(certificateSec2)} class="py-2 px-4 boton-seeRec seeC">
                         See Certificate
                     </button>
                 </div>

@@ -13,6 +13,10 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+    @include mobile{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .textContainer{
         align-self:flex-end ;

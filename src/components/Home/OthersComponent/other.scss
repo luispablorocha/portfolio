@@ -4,6 +4,11 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    @include mobile{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 .text-morethan {
     text-align: center;
@@ -55,10 +60,13 @@
         text-align: justify;
         font-size: 12px;
 
-        @include mobile {
-     
-    
+        p{
+            @include mobile {
+                font-size: 15px;
+            }
         }
+
+       
     }
 
     .logoFace {
@@ -93,9 +101,30 @@
         font-size: 14px;
         color: black;
         border-radius: 50px;
+
+        
+
+        
     }
 
     .boton-seeRec:hover {
         background-color: gainsboro;
+    }
+
+    .container-buttons{
+        @include mobile {
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .seeC{
+            margin-left: 10px;
+            @include mobile {
+                margin-top: 10px;
+                margin-left: 0px;
+            }
+
+        }
     }
 }
