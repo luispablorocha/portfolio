@@ -16,16 +16,17 @@ import imgCN from '../../../assets/images/more/networks.jpg';
 import imgDB from '../../../assets/images/more/data.jpg';
 import imgSec from '../../../assets/images/more/security.jpg';
 
-const sliderVariants = {
+const textVariants = {
     initial: {
-        x: 0,
+        x: -500,
+        opacity: 0
     },
     animate: {
-        x: '-220%',
+        x: 0,
+        opacity: 1,
         transition: {
-            repeat: Infinity,
-            ease: "linear",
-            duration: 10,
+            duration: 1,
+            staggerChildren: 0.1
         }
     }
 }
@@ -53,9 +54,11 @@ const Other = () => {
                 </div>
                 than Programming...
             </div>
-            <div className="container container-more">
-                <div className="row">
-                    <div className="col-lg-9 col-md-12 mb-4 pr-4">
+            <motion.div className="container container-more" variants={textVariants}
+                initial="initial"
+                whileInView="animate">
+                <motion.div className="row">
+                    <motion.div className="col-lg-9 col-md-12 mb-4 pr-4" variants={textVariants}>
                         <div className="title-more">
                             COMPUTER NETWORKS
                         </div>
@@ -74,7 +77,7 @@ const Other = () => {
                                 - Network protocols such as TCP/IP, DNS, DHCP and VLANs.
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
                     <div className="col-lg-3 col-md-12 container-image-net">
                         <img src={imgCN} className="image-more"></img>
                         * Image by
@@ -82,14 +85,17 @@ const Other = () => {
                             Michal Jarmoluk</a> on
                         <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2784907">Pixabay</a>
                     </div>
-                </div>
+                </motion.div>
                 <div className="mt-2">
                     <button onClick={() => abrirModal(certificateNet)} class="py-2 px-4  boton-seeRec">
                         See Certificate
                     </button>
                 </div>
-            </div>
-            <div className="container container-more">
+            </motion.div>
+            <motion.div className="container container-more"
+                variants={textVariants}
+                initial="initial"
+                whileInView="animate">
                 <div className="row">
                     <div className="col-lg-9 col-md-12  ">
                         <div className="title-more">
@@ -119,8 +125,11 @@ const Other = () => {
                     </button>
                 </div>
 
-            </div>
-            <div className="container container-more">
+            </motion.div>
+            <motion.div className="container container-more"
+                variants={textVariants}
+                initial="initial"
+                whileInView="animate">
                 <div className="row">
                     <div className="col-lg-9 col-md-12 mb-4 pr-4">
                         <div className="title-more">
@@ -166,7 +175,7 @@ const Other = () => {
                         See Certificate
                     </button>
                 </div>
-            </div>
+            </motion.div>
             <ModalImagen isOpen={modalAbierto} onClose={cerrarModal} imageUrl={imagenUrl} />
         </div>
     )

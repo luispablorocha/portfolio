@@ -28,7 +28,8 @@ const Intro = () => {
         <div className="hero">
             <div className="wrapper container">
                 <motion.div className="textContainer" variants={textVariants}
-                    initial="initial" animate="animate">
+                    initial="initial"
+                    whileInView="animate">
                     <motion.h2 variants={textVariants}>PABLO ROCHA </motion.h2>
                     <div className='flex containericons'>
                         <a href="https://www.linkedin.com/in/luis-pablo-rocha-1bb935214/" target="_blank" rel="noopener noreferrer">

@@ -11,6 +11,25 @@ import {
 
 import imgCode from '../../assets/images/code/tlani-code.jpg'
 
+const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2
+        }
+    }
+};
+
+const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1
+    }
+};
 
 const Project = () => {
     const { id } = useParams();
@@ -64,14 +83,18 @@ const Project = () => {
                     </div>
 
                     {/* Segunda columna */}
-                    <div className="flex-1 sm:ml-2 mb-5">
+                    <motion.div className="flex-1 sm:ml-2 mb-5">
                         <div className={styles.containerTec}>
                             <div className={`text-3xl ${styles.textAbout}`}>
                                 Technologies <span className="font-bold">Used</span>
                             </div>
-                            <div className="grid grid-cols-4 gap-4 mt-5">
+                            <motion.div className="grid grid-cols-4 gap-4 mt-5"
+                                variants={container}
+                                initial="hidden"
+                                animate="visible">
                                 {logos.map((logo, index) => (
-                                    <div key={index} className="col-span-1 flex flex-col items-center justify-center">
+                                    <motion.div
+                                        variants={item} key={index} className="col-span-1 flex flex-col items-center justify-center">
                                         <img
                                             className={`${styles.imageLogo}`}
                                             src={logo}
@@ -80,11 +103,11 @@ const Project = () => {
                                         <div className={styles.texTec}>
                                             {tecnologies[index]}
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))}
-                            </div>
+                            </motion.div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className={`flex flex-col sm:flex-row gap-4 ${styles.mainContainer}`}>
                     <div className={`flex-1 sm:mr-2`}>

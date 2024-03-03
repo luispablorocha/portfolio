@@ -1,6 +1,6 @@
 import "./service.scss";
 import { useRef } from "react";
-import { animate, motion, useInView } from 'framer-motion'
+import { animate, motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import imgPeople from '../../../assets/images/deco/people.webp';
 
@@ -22,13 +22,12 @@ const variants = {
     }
 }
 const Services = () => {
-
-    const ref = useRef();
-    const isInView = useInView(ref, { margin: "-100px" })
     return (
-        <motion.div className="services container" variants={variants}
-            initial="initial" animate="animate"
-            whileInView={isInView}>
+        <motion.div className="services container" 
+            variants={variants}
+            initial="initial" 
+            whileInView="animate"
+           >
             <motion.div className="textContainer" variants={variants}>
                 <p>I excel in both programming and design, creating visually captivating and user-friendly
                     <br />apps and websites.</p>

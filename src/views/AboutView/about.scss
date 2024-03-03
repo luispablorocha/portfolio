@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .containerAbout {
     .hello {
         font-size: 80px;
@@ -11,6 +12,11 @@
         color: #75ffe8;
         line-height: 80px;
         font-family: 'Poppins';
+        @include mobile {
+            font-size: 30px; 
+            line-height: 40px;  
+            padding-bottom: 10px;
+        }
     }
 
     .text-aboutme {

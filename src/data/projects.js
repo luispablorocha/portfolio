@@ -7,6 +7,7 @@ import fondoPred from '../../src/assets/images/mockups/predacad.png';
 import fondoIndoor from '../../src/assets/images/mockups/indoor.png';
 import fondoPaq from '../../src/assets/images/mockups/paq.png';
 import fondoSMBD from '../../src/assets/images/mockups/smbd.png';
+import fondoLanding from '../../src/assets/images/mockups/landing-page.png'
 
 //ICONOS BLANCOS
 import iconReact from '../../src/assets/images/react.png';
@@ -22,6 +23,7 @@ import iconJava from '../../src/assets/images/java-w2.png';
 import iconPostgres from '../../src/assets/images/postgresql.png';
 import iconCSharp from '../../src/assets/images/c-sharp-w.png';
 import iconJS from '../../src/assets/images/js.png';
+import iconNextJS from '../../src/assets/images/next-logo.png'
 
 //LOGOS COLOR
 import logoReact from '../../src/assets/images/logos/react.png';
@@ -40,6 +42,7 @@ import logoNetBeans from '../../src/assets/images/logos/netbeans.png';
 import logoPostgres from '../../src/assets/images/logos/postgres.png';
 import logoCSharp from '../../src/assets/images/languajes/c-sharp.png';
 import logoNet from '../../src/assets/images/logos/net.png'
+import logoNextJS from '../../src/assets/images/logos/next-js.png'
 
 //MOCKUPS
 //PORTFOLIO
@@ -74,11 +77,36 @@ import imgSBD1 from '../../src/assets/images/code/smbd/smbd-1.jpg';
 import imgSBD2 from '../../src/assets/images/code/smbd/smbd-2.jpg';
 import imgSBD3 from '../../src/assets/images/code/smbd/smbd-3.jpg';
 import imgSBD4 from '../../src/assets/images/code/smbd/smbd-4.jpg';
+//LANDING
+import land1 from '../../src/assets/images/code/landing/landing-1.jpg';
+import land2 from '../../src/assets/images/code/landing/landing-2.jpg';
+import land3 from '../../src/assets/images/code/landing/landing-3.jpg';
+
 
 const dataProjects = [
     {
+        id: 8,
+        title: 'LANDING PAGE',
+        type: 'web',
+        description: 'I designed and developed the front-end of a landing page for an '+
+        'application, aimed at providing users with a better understanding of its functionality and facilitating downloads'+
+        '. I used HTML, SAAS, and JavaScript to ensure responsiveness across devices. Additionally, I utilized Illustrator to create custom'+
+        ' graphics that enhanced the page aesthetic and effectively communicated the application message.',
+        tecnologies: ['React JS','Next JS', 'Illustrator', "Motion", "Tailwind", "Saas"],
+        date: 'February 2024',
+        image: fondoLanding,
+        icons: [iconReact, iconNextJS,iconMotion,],
+        logos: [logoReact,logoNextJS,logoAI,logoMotion,logoTail,logoSaas],
+        mockups: [land1,land2,land3],
+        link: {
+            linkto: "https://tlatoani.neltok.com/",
+            linkType: "web"
+        },
+
+    },
+    {
         id: 0,
-        title: 'PORTFOLIO',
+        title: 'MY PORTFOLIO',
         type: 'web',
         description: 'I designed and developed a comprehensive web portfolio ' +
             'with the dual purpose of honing my skills and providing a platform to ' +
