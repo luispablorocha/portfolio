@@ -9,7 +9,7 @@ import ImageMe from '../../../../src/assets/images/deco/me-2.png'
 
 const textVariants = {
     initial: {
-        x: -500,
+        x: 100,
         opacity: 0
     },
     animate: {

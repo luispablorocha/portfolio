@@ -18,7 +18,7 @@ import imgSec from '../../../assets/images/more/security.jpg';
 
 const textVariants = {
     initial: {
-        x: -500,
+        x: 50,
         opacity: 0
     },
     animate: {

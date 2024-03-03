@@ -6,7 +6,7 @@ import imgPeople from '../../../assets/images/deco/people.webp';
 
 const variants = {
     initial: {
-        x: -500,
+        x: -50,
         y: 100,
         opacity: 0
     },

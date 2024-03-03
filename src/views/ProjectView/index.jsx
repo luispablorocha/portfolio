@@ -89,9 +89,9 @@ const Project = () => {
                                 Technologies <span className="font-bold">Used</span>
                             </div>
                             <motion.div className="grid grid-cols-4 gap-4 mt-5"
-                                variants={container}
+                                variants={container}               
                                 initial="hidden"
-                                animate="visible">
+                                whileInView="visible">
                                 {logos.map((logo, index) => (
                                     <motion.div
                                         variants={item} key={index} className="col-span-1 flex flex-col items-center justify-center">
