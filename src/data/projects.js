@@ -8,6 +8,7 @@ import fondoIndoor from '../../src/assets/images/mockups/indoor.png';
 import fondoPaq from '../../src/assets/images/mockups/paq.png';
 import fondoSMBD from '../../src/assets/images/mockups/smbd.png';
 import fondoLanding from '../../src/assets/images/mockups/landing-page.png'
+import fondoRapps from '../../src/assets/images/mockups/rapps.png'
 
 //ICONOS BLANCOS
 import iconReact from '../../src/assets/images/react.png';
@@ -81,9 +82,35 @@ import imgSBD4 from '../../src/assets/images/code/smbd/smbd-4.jpg';
 import land1 from '../../src/assets/images/code/landing/landing-1.jpg';
 import land2 from '../../src/assets/images/code/landing/landing-2.jpg';
 import land3 from '../../src/assets/images/code/landing/landing-3.jpg';
-
+//RAPPS
+import rapps1 from '../../src/assets/images/code/rapps/rapps-1.jpeg';
+import rapps2 from '../../src/assets/images/code/rapps/rapps-2.jpeg';
+import rapps3 from '../../src/assets/images/code/rapps/rapps-3.jpeg';
+import rapps4 from '../../src/assets/images/code/rapps/rapps-4.jpeg';
+import rapps5 from '../../src/assets/images/code/rapps/rapps-5.jpeg';
+import rapps6 from '../../src/assets/images/code/rapps/rapps-6.jpeg';
 
 const dataProjects = [
+    {
+        id: 8,
+        title: 'RAPPSBERRY',
+        type: 'app',
+        description: 'React Native app mimicking a shopping platform. ' +
+        'It utilizes AsyncStorage for local data storage. '+
+        'Users can play roles as either administrators or regular shoppers. '+ 
+        'Administrators manage products, while regular users browse and make purchases.',
+        tecnologies: ['React JS','Next JS', 'Illustrator', "Motion", "Tailwind", "Saas"],
+        date: 'April 2024',
+        image: fondoRapps,
+        icons: [iconReact],
+        logos: [logoReact,],
+        mockups: [rapps1,rapps2,rapps3, rapps4, rapps5, rapps6],
+        link: {
+            linkto: "https://github.com/LuisPabloRocha/rappsberry-app",
+            linkType: "web"
+        },
+
+    },
     {
         id: 8,
         title: 'LANDING PAGE',
