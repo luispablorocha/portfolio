@@ -184,8 +184,20 @@ const Expertise = () => {
                     <div className="pl-4 ">
                         <div className={`mb-8`}>
                             <div className={styles.subtitleContent}>
-                                EXPERIENCE
+                                BRIEF EXPERIENCE
                             </div>
+                            <JobComponent
+                                title="SOFTWARE ENGINEER"
+                                position="Ford México"
+                                duties="HTML | Angular | SQL Server"
+                                icon={codeSlash}
+                            />
+                            <JobComponent
+                                title="FRONTEND DEVELOPER"
+                                position="Freelance, Viakable"
+                                duties="React TS | API's"
+                                icon={codeSlash}
+                            />
                             <JobComponent
                                 title="ADMIN & COSTUMER SERV."
                                 position="Ferreteria Sta. Rita"

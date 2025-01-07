@@ -92,7 +92,7 @@ import rapps6 from '../../src/assets/images/code/rapps/rapps-6.jpeg';
 
 const dataProjects = [
     {
-        id: 8,
+        id: 9,
         title: 'RAPPSBERRY',
         type: 'app',
         description: 'React Native app mimicking a shopping platform. ' +
