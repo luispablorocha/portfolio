@@ -20,7 +20,7 @@ import certificateR from '../../assets/images/certificates/cerf-r.jpeg';
 import certificateRN from '../../assets/images/certificates/cerf-rn.jpeg';
 import certificateNet from '../../assets/images/certificates/networks-cerf.jpg';
 
-import pdfDocDV from '../../assets/documents/luispablorocha-CV.pdf';
+import pdfDocDV from '../../assets/documents/luispablorochacv.pdf';
 
 import imgUK from '../../assets/images/united-kingdom.png';
 import imgFR from '../../assets/images/france.png';
